@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.agro.dkdlab">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-permission android:name="android.permission.USB_PERMISSION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".app.MyApp"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DkdLab"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".ui.view.Test"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.FertilizerRecommendationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.ManualFertilizerCalculatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.ReportDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.ReportResultFragmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.SoilTestListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.login.GuestLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.login.OtpVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.guest.GuestDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.guest.SoilSampleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.guest.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.MultipleCropSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.guest.UpdateSoilSampleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.guest.ReportDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.guest.GenerateReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.login.RegisterUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--<intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>-->
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/usb_device_filter" />
+        </activity>
+
+        <service android:name=".simple_usb_terminal.SerialService" />
+
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.agro.dkdlab.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".ui.view.offline.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.guest.SampleAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.admin.AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.admin.SampleKhasaraActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/query_today"
+        android:title="Today" />
+
+    <item
+        android:id="@+id/yesterday"
+        android:title="Yesterday" />
+
+    <item
+        android:id="@+id/this_week"
+        android:title="This Week" />
+
+    <item
+        android:id="@+id/last_week"
+        android:title="Last Week" />
+
+    <item
+        android:id="@+id/this_month"
+        android:title="This Month" />
+
+    <item
+        android:id="@+id/last_month"
+        android:title="Last Month" />
+
+    <item
+        android:id="@+id/custom"
+        android:title="Custom Date" />
+
+</menu>

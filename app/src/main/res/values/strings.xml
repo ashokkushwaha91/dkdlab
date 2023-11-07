@@ -1,0 +1,390 @@
+<resources>
+    <string name="app_name">Dkd Lab</string>
+    <string name="user_name_star">User name<font color='#FF0000'> *</font></string>
+    <string name="password_star">Password<font color='#FF0000'> *</font></string>
+    <string name="search">Search name/barcode here</string>
+    <string name="lab_agent_name_star">Lab agent name<font color='#FF0000'> *</font></string>
+    <string name="farmer_name">Farmer name</string>
+    <string name="farmer_mobile_number">Farmer mobile number</string>
+    <string name="serial_number_star">Sample serial number<font color='#FF0000'> *</font></string>
+    <string name="select_soil_type">Select soil type</string>
+    <string name="enter_agent_name">Please enter agent name</string>
+    <string name="enter_password">Please enter password</string>
+    <string name="enter_mobile_number">Please enter mobile number</string>
+    <string name="enter_scan_barcode">Please enter/scan barcode</string>
+    <string name="barcode_exist">Report already created for that barcode</string>
+    <string name="enter_result">Please enter result</string>
+    <string name="no_records_found">No result found!</string>
+    <string name="scan_sample_code_star">Sample barcode<font color='#FF0000'> *</font></string>
+    <string name="please_wait">Please wait...</string>
+    <string name="to_exit">Please click BACK again to exit</string>
+    <string name="devices">USB Devices</string>
+
+    <string name="network_error">Network Error!</string>
+    <string name="error">Error!</string>
+    <string name="no_internet">Seems like your device does not have an active internet connection!! Please check your connectivity and try again.</string>
+    <string name="app_alert">App Alert!</string>
+    <string name="internal_server_error">Internal server error!</string>
+    <string name="enter_10_digit_mobile_number">Please enter 10 digit mobile number</string>
+    <string name="please_enter_valid_mobile_number">Please enter valid mobile number</string>
+
+    <string name="enter_role">Enter user role</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="do_you_want_to_logout">Do you want to logout?</string>
+    <string name="farm_size_star">Farm size<font color='#FF0000'> *</font></string>
+    <string name="farm_size_acre">Farm size(Acre)</string>
+    <string name="farm_size">Farm size</string>
+    <string name="nitrogen_star">Nitrogen<font color='#FF0000'> *</font></string>
+    <string name="nitrogen">Nitrogen value</string>
+    <string name="phosphorus_star">Phosphorus<font color='#FF0000'> *</font></string>
+    <string name="phosphorus">Phosphorus value</string>
+    <string name="potassium_star">Potassium<font color='#FF0000'> *</font></string>
+    <string name="potassium">Potassium value</string>
+    <string name="organic_carbon_star">Organic carbon<font color='#FF0000'> *</font></string>
+    <string name="organic_carbon">Organic carbon value</string>
+    <string name="nitrogen_value">Nitrogen</string>
+    <string name="phosphorus_value">Phosphorus</string>
+    <string name="potassium_value">Potassium</string>
+    <string name="organic_carbon_value">Organic Carbon</string>
+    <string name="pH_value">pH</string>
+    <string name="hectare">Hectare</string>
+    <string name="urea">Urea</string>
+    <string name="dap">Dap</string>
+    <string name="mop">Mop</string>
+    <string name="ssp">Ssp</string>
+    <string name="kg_acre">KG</string>
+    <!--    <string name="acre">Acre</string>-->
+    <string name="fym">FYM</string>
+    <string name="rock_phosphate">Rock Phosphate</string>
+    <string name="psb">PSB</string>
+    <string name="kmb">KMB</string>
+    <string name="ml">ml</string>
+    <string name="ton">Ton</string>
+    <string name="quintal">Quintal</string>
+
+    <string name="farmer_name_star">Farmer name<font color='#FF0000'> *</font></string>
+    <string name="enter_farmer_name">Enter farmer name</string>
+    <string name="father_name_star">Father name<font color='#FF0000'> *</font></string>
+    <string name="enter_father_name">Enter father name</string>
+    <string name="land_area_acre_star">Land area (Acre)<font color='#FF0000'>*</font></string>
+    <string name="view_khasra_location"><u>Khasra Location</u></string>
+    <string name="category">Category</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="transgender">Transgender</string>
+    <string name="select_gender">Select gender</string>
+    <string name="select_gender_star">Select gender<font color='#FF0000'> *</font></string>
+    <string name="select_category">Select category</string>
+    <string name="select_category_star">Select category<font color='#FF0000'> *</font></string>
+    <string name="enter_farmer_mobile_number_star">Farmer mobile number<font color='#FF0000'> *</font></string>
+    <string name="select_last_crop_name_star">Select crop name<font color='#FF0000'> *</font></string>
+    <string name="search_crop_name">Search crop name</string>
+    <string name="select_irrigation_type_star">Select irrigation sources<font color='#FF0000'> *</font></string>
+    <string name="farmer_photo">Farmer Photo</string>
+    <string name="find_khasra_number_star">Find khasra number<font color='#FF0000'> *</font></string>
+
+
+    <string name="ok_caps">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="your_mobile_number">Your mobile number</string>
+    <string name="validation_error">Validation Error!</string>
+    <string name="enter_valid_number">Please enter your 10 digit mobile number</string>
+    <string name="get_otp">GET OTP</string>
+    <string name="login">LOGIN</string>
+    <string name="resend_otp">RESEND OTP</string>
+    <string name="don_t_received_otp">Don\'t received otp?</string>
+    <string name="verify">VERIFY</string>
+    <string name="please_enter_otp_received_on_your_mobile">Please enter OTP received on your mobile</string>
+    <string name="verify_your_mobile_number">Verify your mobile number</string>
+    <string name="verification">OTP VERIFICATION</string>
+    <string name="lan_hindi"> हिंदी (Hindi)</string>
+    <string name="lang_english">English</string>
+    <string name="new_sample">NEW SAMPLE</string>
+    <string name="update_sample">UPDATE SAMPLE</string>
+    <string name="update_survey">UPDATE SURVEY</string>
+    <string name="soil_sample_details">SOIL SAMPLE DETAILS</string>
+    <string name="father_name">Father name</string>
+    <string name="remarked">Remarked</string>
+    <string name="urs_name">Name</string>
+    <string name="pmkisan_list">PM kisan</string>
+    <string name="cancel">cancel</string>
+    <string name="update">Update</string>
+    <string name="record_updated">Record successfully updated</string>
+    <string name="khasra">Khasra</string>
+    <string name="lab_id">Lab Id</string>
+    <string name="enter_name_or_khasra_number">Enter farmer name or Khasra number</string>
+    <string name="save">SAVE</string>
+    <string name="full_name">Full name</string>
+    <string name="enter_name">Enter name</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="alternate_mobile_number">Alternate mobile number</string>
+    <string name="mobile_number_star">Mobile number<font color='#FF0000'> *</font></string>
+    <string name="enter_farmer_mobile_number">Farmer mobile number</string>
+    <string name="enter_farmer_alternate_mobile_number">Farmer alternate mobile number</string>
+    <string name="enter_correct_mobile_number">Enter correct mobile number</string>
+    <string name="please_enter_mobile_number">Please enter farmer mobile number</string>
+    <string name="khasra_no">Khasra no.</string>
+    <string name="khasra_number">Khasra number</string>
+    <string name="khasra_number_star">Khasra number<font color='#FF0000'> *</font></string>
+    <string name="find_khasra_number">Find khasra number</string>
+    <string name="khasra_location_star">Khasra location<font color='#FF0000'> *</font></string>
+    <string name="khasra_location">Khasra location</string>
+    <string name="Khasra_number_required">Khasra number required</string>
+    <string name="total_land_size">Total nand Size</string>
+    <string name="enter_land_size">Enter land area</string>
+    <string name="sample_date">Sample date</string>
+    <string name="select_sample_date">Select sample date</string>
+    <string name="enter_last_crop_name">Enter crop name</string>
+    <string name="enter_rabi_crop_name">Enter rabi crop name</string>
+    <string name="enter_kharif_crop_name">Enter kharif crop name</string>
+    <string name="enter_current_crop_name">Enter current crop name</string>
+    <string name="land_type">Land type</string>
+    <string name="record_successfully_saved">Record successfully saved</string>
+    <string name="soil_sample_successfully_collected">Soil sample successfully collected</string>
+    <string name="record_successfully_updated">Record successfully updated</string>
+    <string name="soil_report_has_been_generated_successfully">soil report has been generated successfully</string>
+    <string name="login_text_message1">We will send you an</string>
+    <string name="login_text_message2">One Time Password</string>
+    <string name="login_text_message3">on this mobile number</string>
+    <string name="enter_land_type">Enter land type</string>
+    <string name="enter_sample_date">Sample collection date</string>
+    <string name="village_code_not_found">Village code not found!</string>
+    <string name="search_khasra">Search khasra</string>
+    <string name="current_location">Current location</string>
+    <!--<string name="enter_n_value">Enter nitrogen value (20 - 700)</string>
+    <string name="enter_p_value">Enter phosphorus value (2.0 - 100)</string>
+    <string name="enter_k_value">Enter potassium value (10 - 700)</string>
+    <string name="enter_oc_value">Enter OC value (0.10 - 100)</string>
+    <string name="enter_ph_value">Enter pH value (5 - 9.5)</string>-->
+    <string name="enter_n_value_min">Enter min nitrogen value</string>
+    <string name="enter_p_value_min">Enter min phosphorus value</string>
+    <string name="enter_k_value_min">Enter min potassium value</string>
+    <string name="enter_oc_value_min">Enter min OC value</string>
+    <string name="enter_ph_value_min">Enter min pH value</string>
+
+    <string name="enter_n_value_max">Enter max nitrogen value</string>
+    <string name="enter_p_value_max">Enter max phosphorus value</string>
+    <string name="enter_k_value_max">Enter max potassium value</string>
+    <string name="enter_oc_value_max">Enter max OC value</string>
+    <string name="enter_ph_value_max">Enter max pH value</string>
+
+    <string name="soil_report">Generate Soil Report</string>
+    <string name="please_select_location">Please select location</string>
+    <string name="state_star">State<font color='#FF0000'> *</font></string>
+    <string name="state">State</string>
+    <string name="district">District</string>
+    <string name="district_star">District<font color='#FF0000'> *</font></string>
+    <string name="tahsil">Tahsil</string>
+    <string name="block">Block</string>
+    <string name="block_star">Block<font color='#FF0000'> *</font></string>
+    <string name="village">Village</string>
+    <string name="enter_state_name">Enter State name</string>
+    <string name="enter_district_name">Enter District name</string>
+    <string name="enter_block_name">Enter Block name</string>
+    <string name="enter_village_name">Enter village name</string>
+    <string name="enter_pincode">Enter pin code</string>
+    <string name="enter_correct_pincode">Enter correct pin code</string>
+    <string name="search_village">Search village</string>
+    <string name="please_select_block_first">Please select block first</string>
+    <string name="please_select_state">Please select state</string>
+    <string name="please_select_district">Please select district</string>
+    <string name="please_select_tahsil">Please select tahsil</string>
+    <string name="please_select_block">Please select block</string>
+    <string name="please_select_village">Please select village</string>
+    <string name="please_select_khasra">Please select khasra</string>
+    <string name="search_khasra_by_current_location">Search khasra number by current location</string>
+    <string name="gpsNotAvalable">GPS is not enable!</string>
+    <string name="locationSetting">Location setting</string>
+    <string name="soil_sample_info">Soil Report</string>
+    <string name="land_area">Land area</string>
+    <string name="land_area_star">Land area<font color='#FF0000'> *</font></string>
+    <string name="khasra_info">Khasra Info</string>
+    <string name="n_value">N Value</string>
+    <string name="p_value">P Value</string>
+    <string name="k_value">K Value</string>
+    <string name="oc_value">OC Value</string>
+    <string name="ph_value">pH Value</string>
+    <string name="logout_message">Are you sure you want to logout?</string>
+    <string name="logout_title">Logout</string>
+    <string name="logout">Logout</string>
+    <string name="select_last_crop_name">Select crop name</string>
+    <string name="select_previous_crop_name">Select previous crop name</string>
+    <string name="generate_report">Generate Report</string>
+    <string name="share">Share</string>
+    <string name="save_report">SAVE REPORT</string>
+    <string name="land_profile">Land Profile</string>
+    <string name="select_irrigation_type">Select irrigation sources</string>
+    <string name="image_error">Image Selection Failed!</string>
+    <string name="irrigation_type">Irrigation type</string>
+    <!--<string name="take_picture">Upload farm photo</string>-->
+    <string name="upload_form_photo">Upload form photo</string>
+    <string name="take_sample_photo">Upload sample photo</string>
+    <string name="send_to">Send To</string>
+    <string name="scan_sample_code">Scan sample barcode</string>
+    <string name="sample_photo">Sample photo</string>
+    <string name="select_crop">Select crop</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="name">Enter name</string>
+    <string name="name_star">User name<font color='#FF0000'> *</font></string>
+    <string name="add_user">Add User</string>
+    <string name="save_record">Save Record</string>
+    <string name="village_name">Village name</string>
+    <string name="select_village_name_star">Village name<font color='#FF0000'> *</font></string>
+    <string name="upload_caste_certificate">Upload caste certificate</string>
+    <string name="done">Done</string>
+    <string name="user_successfully_register">User successfully registered</string>
+    <string name="gender">Gender</string>
+    <string name="caste_certificate">Caste Certificate</string>
+    <string name="soil_sample_photo">Soil Sample Photo</string>
+    <string name="view_VillageMap"><u>Village Map</u></string>
+    <string name="pending">Pending</string>
+    <string name="completed_">Completed</string>
+    <string name="total">Total:</string>
+    <string name="users_list">Users List</string>
+    <string name="select_villages">Select villages</string>
+    <string name="enter_user_name">Enter user name</string>
+    <string name="total_khasra">Total khasra</string>
+    <string name="total_khasra_">Total khasra:</string>
+    <string name="total_village">Total village:</string>
+    <string name="dharti_ka_doctor">Dharti Ka Doctor</string>
+    <string name="enter_other_irrigation_source">Enter other irrigation source</string>
+    <string name="please_ener_sample_barcode">Please scan sample barcode</string>
+    <string name="user_role">User role</string>
+    <string name="user_role_star">User role<font color='#FF0000'> *</font></string>
+    <string name="create_user">Create User</string>
+    <string name="sample_bar_code">Sample Bar Code</string>
+    <string name="something_wrong">Something went wrong!</string>
+    <string name="enter_aadhar_number">Enter aadhaar number</string>
+    <string name="enter_aadhar_number_star">Enter aadhaar number<font color='#FF0000'> *</font></string>
+    <string name="enter_12_digit_aadhar_number">Enter 12 digit aadhaar number</string>
+    <string name="please_enter_valid_aadhaar_number">Please enter valid aadhaar number</string>
+    <string name="category_remarks">Category remarks</string>
+    <string name="aadhar_number">Aadhaar number</string>
+    <string name="enter_remarks">Enter remarks</string>
+    <string name="enter_remarks_star">Enter remarks<font color='#FF0000'> *</font></string>
+    <string name="select_aadhar_options">Select aadhaar option</string>
+    <string name="is_aadhar_number_available">Is aadhaar number available?<font color='#FF0000'> *</font></string>
+    <!--    <string name="samples_collected">SAMPLE COLLECTED</string>-->
+    <string name="survey_completed">SURVEY COMPLETED</string>
+    <string name="sample_completed">SAMPLES COMPLETED</string>
+
+    <string name="collected_sample">COLLECTED SAMPLE</string>
+    <string name="test_completed">TEST COMPLETED</string>
+
+
+    <string name="survey">SURVEY</string>
+    <string name="sample">SAMPLE</string>
+    <string name="completed">COMPLETED</string>
+
+    <string name="soil_sample_created">Soil sample created</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="record_not_found">Record not found</string>
+    <string name="do_you_want_to_deactivate_user">Do you want to deactivate the user?</string>
+    <string name="do_you_want_to_activate_user">Do you want to activate the user?</string>
+    <string name="deactivate">Deactivate</string>
+    <string name="activate">Activate</string>
+    <string name="enter_user_name_number">Enter user name/Phone number</string>
+    <string name="mixFert123216">12-32-16</string>
+    <string name="mixFert102626">10-26-26</string>
+    <string name="acre">Acre</string>
+    <string name="no_which_crop_want_sow">Which crop do you want to sow?</string>
+    <string name="crop">Crop</string>
+    <string name="update_successful">Update successful</string>
+    <string name="select_current_crop_name">Select current crop name</string>
+    <string name="select_current_crop_name_star">Select current crop name<font color='#FF0000'> *</font></string>
+    <string name="last_crop_name">Crop name</string>
+    <string name="last_crop_name_star">Crop name<font color='#FF0000'> *</font></string>
+    <string name="initiate_khasra_mapping">Initiate khasra mapping</string>
+    <string name="enter_crop_yield">Enter crop yield in QT (Optional)</string>
+    <string name="current_crop_name">Current crop name</string>
+    <string name="version">Version</string>
+    <string name="khasra_already_exist">Khasra already exist.</string>
+    <string name="count">Count</string>
+    <string name="assigned_villages">Assigned villages</string>
+    <string name="remove_village">Remove village</string>
+    <string name="do_you_remove_village">Do you want to remove this village?</string>
+    <string name="successfully_removed">successfully removed</string>
+    <string name="form_photo">Form photo</string>
+    <string name="form_photo_star">Form photo (<font color='#FF0000'>*</font>)</string>
+    <string name="note">Note</string>
+    <string name="ph">pH</string>
+    <string name="select_n_value">Nitrogen value required</string>
+    <string name="select_n_value_star">Select N value<font color='#FF0000'> *</font></string>
+    <string name="select_p_value">Phosphorus value required</string>
+    <string name="select_p_value_star">Select P value<font color='#FF0000'> *</font></string>
+    <string name="select_k_value">potassium value required</string>
+    <string name="select_k_value_star">Select K value<font color='#FF0000'> *</font></string>
+    <string name="select_oc_value">Organic carbon value required</string>
+    <string name="select_oc_value_star">Select OC value<font color='#FF0000'> *</font></string>
+    <string name="select_ph_value">pH value required</string>
+    <string name="select_ph_value_star">Select pH value<font color='#FF0000'> *</font></string>
+    <string name="select_crop_type">Please select crop type</string>
+    <string name="select_crop_name">Select crop name</string>
+    <string name="please_capture_crop_images">Please capture crop photos</string>
+    <string name="please_capture_farm_image">Please capture land photo</string>
+    <string name="please_capture_more_crop_images">Please capture more than one crop photos</string>
+    <string name="title_activity_verify_scan_barcode">VerifyScanBarcodeActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="completed_survey">Completed Survey</string>
+    <string name="Pending_survey">Pending Survey</string>
+    <string name="search_here">Search here</string>
+    <string name="select_crop_star">Select crop<font color='#FF0000'> *</font></string>
+
+
+    <string name="sample_delete_message">Are you sure you want to delete sample?</string>
+    <string name="sample_delete__title">Delete Sample</string>
+    <string name="delete_sample">DELETE</string>
+    <string name="block_name">Block name</string>
+    <string name="assign_villages">Assign villages</string>
+    <string name="land_area_acre">Land area (Acre)</string>
+    <string name="soil_sample_photo_star">Soil sample photo (<font color='#FF0000'>*</font>)</string>
+    <string name="aadhaar_photo_star">Aadhaar photo (<font color='#FF0000'>*</font>)</string>
+    <string name="capture_field_boundary_star">Capture field boundary (<font color='#FF0000'>*</font>)</string>
+    <string name="crop_photos_star">Crop photos (<font color='#FF0000'>*</font>)</string>
+    <string name="upload_photo">Upload photo</string>
+    <string name="please_ener_16_digit_barcode">Please ener 16 digit barcode</string>
+    <string name="please_ener_valid_barcode">Please ener valid barcode</string>
+    <string name="select_vendor_star">Select vendor<font color='#FF0000'> *</font></string>
+    <string name="select_vendor_name">Select vendor name</string>
+    <string name="search_village_name">Search village name</string>
+    <string name="alreay_login">Already logged in</string>
+    <string name="you_have_already_logged_in">You are already logged in on another device</string>
+    <string name="Continue">continue</string>
+    <string name="warning">Warning</string>
+    <string name="present_cultivator_aadhaar_number">Present cultivator aadhaar number</string>
+    <string name="farmer_aadhaar_number_star">Farmer aadhaar number<font color='#FF0000'> *</font></string>
+    <string name="name_or_present_cultivator">Name of present cultivator</string>
+    <string name="caste_category_remarks">Caste category remarks</string>
+    <string name="present_cultivator_name">Present cultivator name</string>
+    <string name="profile">Profile</string>
+    <string name="date_birth_star">Date of birth<font color='#FF0000'> *</font></string>
+    <string name="enter_date_birth">Enter date of birth</string>
+    <string name="aadhaar_number_star">Aadhaar number<font color='#FF0000'> *</font></string>
+    <string name="take_profile_photo">Profile photo required</string>
+    <string name="take_aadhaar_photo">Aadhaar photo required</string>
+    <string name="take_aadhaar_photo_back_side">Aadhaar photo back side required</string>
+    <string name="farmer_photo_required">Farmer photo required</string>
+    <string name="survey_successfully_completed">Survey successfully completed</string>
+    <string name="survey_date">Survey date</string>
+    <string name="delete">Delete</string>
+    <string name="sample_delete_survey">Are you sure you want to delete survey?</string>
+    <string name="delete_survey">Delete survey</string>
+    <string name="do_you_want_to_reject_user_profile">Do you want to disapprove user profile</string>
+    <string name="do_you_want_to_approve_user_profile">Do you want to approve user profile</string>
+    <string name="profil_rejected">Profile rejected</string>
+    <string name="update_report">Update Report</string>
+    <string name="testing_date">Testing date</string>
+
+    <string name="ph_star">pH<font color='#FF0000'> *</font></string>
+    <string name="please_wait_for_result">Please wait for result</string>
+    <string name="register">Register</string>
+    <string name="select_state_star">Select state<font color='#FF0000'> *</font></string>
+    <string name="select_district_star">Select district<font color='#FF0000'> *</font></string>
+    <string name="select_block_star">Select block<font color='#FF0000'> *</font></string>
+    <string name="village_name_star">Village Name<font color='#FF0000'> *</font></string>
+    <string name="enter_address">Enter address</string>
+    <string name="pin_code_star">Pin code<font color='#FF0000'> *</font></string>
+</resources>

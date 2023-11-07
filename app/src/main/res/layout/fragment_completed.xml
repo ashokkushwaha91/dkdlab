@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshCompleted"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editSearchReportSample"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/videos_text_bg"
+                android:drawableRight="@drawable/ic_search"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/textColor"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center_vertical"
+                android:hint="Enter name or khasra number"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textSize="14dp"
+                android:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewReport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-5dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                tools:listitem="@layout/sample_list_item_new" />
+
+            <TextView
+                android:id="@+id/emptyMessageViewReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/card_background"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="12dp"
+                android:text="@string/no_records_found"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

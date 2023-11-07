@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.view.ReportResultFragmentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/npk_bg"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutBarCode"
+                style="@style/TextInputLayoutBoxColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edit_top_margin"
+                android:hint="@string/scan_sample_code_star"
+                app:endIconDrawable="@drawable/ic_scanner"
+                app:endIconMode="custom"
+                app:errorEnabled="true"
+                app:expandedHintEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editBarCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:hint="Ex. 11234xxxxxxx"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:padding="2dp"
+                    android:textSize="@dimen/input_text_size" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutAgentName"
+                style="@style/TextInputLayoutBoxColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edit_top_margin"
+                android:hint="@string/lab_agent_name_star"
+                app:endIconMode="custom"
+                app:errorEnabled="true"
+                app:expandedHintEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextAgentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:hint="Ex. Admin"
+                    android:text="5547474"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapWords"
+                    android:padding="2dp"
+                    android:textSize="@dimen/input_text_size" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutMobile"
+                style="@style/TextInputLayoutBoxColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edit_top_margin"
+                android:hint="@string/mobile_number_star"
+                app:endIconMode="custom"
+                app:errorEnabled="true"
+                app:expandedHintEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:digits="0123456789"
+                    android:hint="Ex.6545xxxxxx"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="2dp"
+                    android:textSize="@dimen/input_text_size" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutFarmerName"
+                style="@style/TextInputLayoutBoxColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edit_top_margin"
+                android:hint="@string/farmer_name"
+                app:endIconMode="custom"
+                app:errorEnabled="true"
+                app:expandedHintEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextFarmerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:hint="Ex. Ashok"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapWords"
+                    android:padding="2dp"
+                    android:textSize="@dimen/input_text_size" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutFarmerMobile"
+                style="@style/TextInputLayoutBoxColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edit_top_margin"
+                android:hint="@string/farmer_mobile_number"
+                app:endIconMode="custom"
+                app:errorEnabled="true"
+                app:expandedHintEnabled="false"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextFarmerMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:digits="0123456789"
+                    android:hint="Ex.9867xxxxxx"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="2dp"
+                    android:textSize="@dimen/input_text_size" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="left"
+                android:text="Soil"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editResult"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/edittext_title_margin"
+                android:background="@drawable/edit_text_border"
+                android:backgroundTint="@color/color_fill_underline"
+                android:enabled="false"
+                android:focusable="true"
+                android:fontFamily="@font/press_start_2p"
+                android:gravity="center"
+                android:hint="Console"
+                android:inputType="none"
+                android:padding="14dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <com.agro.dkdlab.custom.ElasticLayout
+                    android:id="@+id/btnCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/textColor"
+                    android:background="@drawable/rect_bg"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="CHECK"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </com.agro.dkdlab.custom.ElasticLayout>
+
+                <com.agro.dkdlab.custom.ElasticLayout
+                    android:id="@+id/btnSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/orange"
+                    android:background="@drawable/rect_bg"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="SAVE"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </com.agro.dkdlab.custom.ElasticLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

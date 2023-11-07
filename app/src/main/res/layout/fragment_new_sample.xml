@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshSample"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editSearchSample"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/videos_text_bg"
+                android:drawableRight="@drawable/ic_search"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/textColor"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center_vertical"
+                android:hint="Enter name or khasra number"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textSize="14dp"
+                android:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewSample"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="-5dp"
+                android:visibility="visible"
+                tools:listitem="@layout/sample_list_item_new" />
+
+            <TextView
+                android:id="@+id/emptyMessageViewSample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/card_background"
+                android:fontFamily="@font/roboto_regular"
+                android:padding="12dp"
+                android:text="@string/no_records_found"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/newSampleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.agro.dkdlab.custom.ElasticCardView
+            android:id="@+id/layoutNewSample"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:innerRadius="0dp"
+            android:orientation="vertical"
+            android:shape="ring"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="75dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp">
+
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_add" />
+        </com.agro.dkdlab.custom.ElasticCardView>
+
+        <TextView
+            android:id="@+id/txtAddNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="New Sample"
+            android:textColor="@color/green_dark"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

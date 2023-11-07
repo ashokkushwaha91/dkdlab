@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Haridwar"
+        android:title="Haridwar" />
+
+    <item
+        android:id="@+id/Bhagwanpur"
+        android:title="Bhagwanpur" />
+
+    <item
+        android:id="@+id/Roorkee"
+        android:title="Roorkee" />
+
+    <item
+        android:id="@+id/Narsan"
+        android:title="Narsan" />
+
+</menu>

@@ -1,0 +1,874 @@
+[
+  {
+    "cropName": "Jackfruit",
+    "id": "61763eedda31e632d60b82c5",
+    "stateCode": "9,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Strawberry",
+    "id": "61763eedda31e632d60b8315",
+    "stateCode": "9,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Bengal Gram (chickpea)",
+    "id": "61763eedda31e632d60b8287",
+    "stateCode": "9,HP01,ST02,PB01",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Ginger",
+    "id": "61763eedda31e632d60b82b3",
+    "stateCode": "9,HP01,ST02,PB01",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Cauliflower",
+    "id": "5fd43e371290536115cf15c9",
+    "stateCode": "9,PB01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Cabbage",
+    "id": "61763eedda31e632d60b8294",
+    "stateCode": "9,PB01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Carrot",
+    "id": "61763eedda31e632d60b8298",
+    "stateCode": "9,PB01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Fenugreek",
+    "id": "61763eedda31e632d60b82ad",
+    "stateCode": "9,PB01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Litchi",
+    "id": "61763eedda31e632d60b82d6",
+    "stateCode": "9,PB01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Mango",
+    "id": "61763eedda31e632d60b82dd",
+    "stateCode": "9,PB01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Papaya",
+    "id": "61763eedda31e632d60b82ef",
+    "stateCode": "9,PB01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Peach",
+    "id": "61763eedda31e632d60b82f0",
+    "stateCode": "9,PB01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Squash Melon",
+    "id": "61763eedda31e632d60b8313",
+    "stateCode": "9,PB01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Bottle Gourd",
+    "id": "61763eedda31e632d60b828f",
+    "stateCode": "9,PB01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Plum",
+    "id": "61763eedda31e632d60b82f8",
+    "stateCode": "9,PB01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Ashwagandha",
+    "id": "61763eedda31e632d60b827e",
+    "stateCode": "9,PB01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Lemon Grass",
+    "id": "61763eedda31e632d60b82cf",
+    "stateCode": "9,PB01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Stevia",
+    "id": "61763eedda31e632d60b8314",
+    "stateCode": "9,PB01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Garlic",
+    "id": "5fd43e381290536115cf15cf",
+    "stateCode": "9,PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Potato",
+    "id": "5fd43e371290536115cf15c6",
+    "stateCode": "9,PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Sugarcane",
+    "id": "5fd43e3c1290536115cf1602",
+    "stateCode": "9,PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Amla",
+    "id": "61763eedda31e632d60b8279",
+    "stateCode": "9,PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Cucumber",
+    "id": "61763eedda31e632d60b82a4",
+    "stateCode": "9,PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Guava",
+    "id": "61763eedda31e632d60b82bd",
+    "stateCode": "9,PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Lentil (masur)",
+    "id": "61763eedda31e632d60b82d0",
+    "stateCode": "9,PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Lime (nimboo)",
+    "id": "61763eedda31e632d60b82d3",
+    "stateCode": "9,PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Okra",
+    "id": "61763eedda31e632d60b82e8",
+    "stateCode": "9,PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Peas",
+    "id": "61763eedda31e632d60b82f4",
+    "stateCode": "9,PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Radish",
+    "id": "61763eedda31e632d60b8301",
+    "stateCode": "9,PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Sorghum",
+    "id": "61763eedda31e632d60b8310",
+    "stateCode": "9,PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Tomato",
+    "id": "61763eedda31e632d60b8321",
+    "stateCode": "9,PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Beetroot",
+    "id": "61763eedda31e632d60b8286",
+    "stateCode": "9,PB01,RJ01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Brinjal",
+    "id": "61763eedda31e632d60b8291",
+    "stateCode": "9,PB01,RJ01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Finger Millet",
+    "id": "61763eedda31e632d60b82b0",
+    "stateCode": "9,PB01,RJ01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Lemon",
+    "id": "61763eedda31e632d60b82ce",
+    "stateCode": "9,PB01,RJ01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Wheat",
+    "id": "61763eedda31e632d60b832a",
+    "stateCode": "9,PB01,RJ01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Dill Seeds",
+    "id": "61763eedda31e632d60b82a8",
+    "stateCode": "9,PB01,RJ01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Indian Bael",
+    "id": "61763eedda31e632d60b82c3",
+    "stateCode": "9,PB01,RJ01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Watermelon",
+    "id": "61763eedda31e632d60b8329",
+    "stateCode": "9,PB01,RJ01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Ash Gourd",
+    "id": "61763eedda31e632d60b827d",
+    "stateCode": "9,PB01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Bitter Gourd",
+    "id": "61763eedda31e632d60b828d",
+    "stateCode": "9,PB01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Sweet Potato",
+    "id": "61763eedda31e632d60b831d",
+    "stateCode": "9,PB01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Green Gram (moong)",
+    "id": "61763eedda31e632d60b82b9",
+    "stateCode": "9,RJ01,HR01,ST02,HP01,PB01",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Pigeon Pea (tur/ Arhar)",
+    "id": "61763eedda31e632d60b82f6",
+    "stateCode": "9,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Pear",
+    "id": "61763eedda31e632d60b82f1",
+    "stateCode": "HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Almond",
+    "id": "61763eedda31e632d60b8277",
+    "stateCode": "HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Apple",
+    "id": "61763eedda31e632d60b827a",
+    "stateCode": "HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Apricot",
+    "id": "61763eedda31e632d60b827b",
+    "stateCode": "HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Kiwi",
+    "id": "61763eedda31e632d60b82cd",
+    "stateCode": "HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Walnut",
+    "id": "61763eedda31e632d60b8327",
+    "stateCode": "HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Turmeric",
+    "id": "61763eedda31e632d60b8324",
+    "stateCode": "HP01,ST02,PB01",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Sweet Orange (malta)",
+    "id": "61763eedda31e632d60b831b",
+    "stateCode": "HR01,ST02,PB01,9",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Chilli",
+    "id": "61763eedda31e632d60b829e",
+    "stateCode": "PB01,9,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Spinach",
+    "id": "5fd43e381290536115cf15d1",
+    "stateCode": "PB01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Carnation",
+    "id": "61763eedda31e632d60b8297",
+    "stateCode": "PB01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Marigold",
+    "id": "61763eedda31e632d60b82de",
+    "stateCode": "PB01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Rose",
+    "id": "61763eedda31e632d60b8304",
+    "stateCode": "PB01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Turnip",
+    "id": "61763eedda31e632d60b8326",
+    "stateCode": "PB01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Arum (arvi)",
+    "id": "61763eedda31e632d60b827c",
+    "stateCode": "PB01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Capsicum",
+    "id": "61763eedda31e632d60b8295",
+    "stateCode": "PB01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Cowpea",
+    "id": "61763eedda31e632d60b82a3",
+    "stateCode": "PB01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Gerbera",
+    "id": "61763eedda31e632d60b82b2",
+    "stateCode": "PB01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Grapes",
+    "id": "61763eedda31e632d60b82b7",
+    "stateCode": "PB01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Lettuce",
+    "id": "61763eedda31e632d60b82d1",
+    "stateCode": "PB01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Loquat",
+    "id": "61763eedda31e632d60b82d8",
+    "stateCode": "PB01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Sapota",
+    "id": "61763eedda31e632d60b8309",
+    "stateCode": "PB01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Groundnut",
+    "id": "5fd43e3a1290536115cf15e5",
+    "stateCode": "PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Sunflower (surajmukhi)",
+    "id": "5fd43e3b1290536115cf15f3",
+    "stateCode": "PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Mash (urd)",
+    "id": "61763eedda31e632d60b82df",
+    "stateCode": "PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Pomegranate",
+    "id": "61763eedda31e632d60b82f9",
+    "stateCode": "PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Soybean",
+    "id": "61763eedda31e632d60b8311",
+    "stateCode": "PB01,RJ01,HP01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Kidney Bean (rajma)",
+    "id": "5fd43e361290536115cf15bd",
+    "stateCode": "PB01,RJ01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Gladiolus",
+    "id": "61763eedda31e632d60b82b5",
+    "stateCode": "PB01,RJ01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Fennel",
+    "id": "61763eedda31e632d60b82ac",
+    "stateCode": "PB01,RJ01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Muskmelon",
+    "id": "61763eedda31e632d60b82e5",
+    "stateCode": "PB01,RJ01,HR01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Mustard",
+    "id": "60ddb28bc856a7405cb5901d",
+    "stateCode": "PB01,RJ01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Long Melon",
+    "id": "61763eedda31e632d60b82d7",
+    "stateCode": "PB01,RJ01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Pumpkin",
+    "id": "61763eedda31e632d60b82fc",
+    "stateCode": "PB01,RJ01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Dhaincha",
+    "id": "5fd43e3a1290536115cf15ea",
+    "stateCode": "PB01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Pearl Millet (bajra)",
+    "id": "5fd43e3b1290536115cf15f6",
+    "stateCode": "PB01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Broccoli",
+    "id": "61763eedda31e632d60b8292",
+    "stateCode": "PB01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Jasmine",
+    "id": "61763eedda31e632d60b82c7",
+    "stateCode": "PB01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Rabi Onion (pyaz)",
+    "id": "61763eedda31e632d60b8300",
+    "stateCode": "PB01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Sesame",
+    "id": "5fd43e3a1290536115cf15e6",
+    "stateCode": "RJ01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Kharif Onion",
+    "id": "61763eedda31e632d60b82ca",
+    "stateCode": "RJ01,HP01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Ajwain",
+    "id": "61763eedda31e632d60b8275",
+    "stateCode": "RJ01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Cumin",
+    "id": "61763eedda31e632d60b82a5",
+    "stateCode": "RJ01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Foxtail Millet",
+    "id": "61763eedda31e632d60b82b1",
+    "stateCode": "RJ01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Guar (cluster Beans)",
+    "id": "61763eedda31e632d60b82bc",
+    "stateCode": "RJ01,ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Linseed",
+    "id": "61763eedda31e632d60b82d4",
+    "stateCode": "RJ01,ST02,PB01",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Black Gram/urd",
+    "id": "5fd43e3b1290536115cf15f2",
+    "stateCode": "ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Bamboo",
+    "id": "61763eedda31e632d60b8281",
+    "stateCode": "ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Black Pepper",
+    "id": "61763eedda31e632d60b828e",
+    "stateCode": "ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Brussels Sprout",
+    "id": "61763eedda31e632d60b8293",
+    "stateCode": "ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Cardamom",
+    "id": "61763eedda31e632d60b8296",
+    "stateCode": "ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Cashew",
+    "id": "61763eedda31e632d60b8299",
+    "stateCode": "ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Cherry",
+    "id": "61763eedda31e632d60b829c",
+    "stateCode": "ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Chestnut",
+    "id": "61763eedda31e632d60b829d",
+    "stateCode": "ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Coconut",
+    "id": "61763eedda31e632d60b82a1",
+    "stateCode": "ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Grapefruit",
+    "id": "61763eedda31e632d60b82b6",
+    "stateCode": "ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Hazelnut",
+    "id": "61763eedda31e632d60b82bf",
+    "stateCode": "ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Maize (zea Mays L)",
+    "id": "61763eedda31e632d60b82da",
+    "stateCode": "ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Summer Squash",
+    "id": "61763eedda31e632d60b8316",
+    "stateCode": "ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Water Caltrop (singhara)",
+    "id": "61763eedda31e632d60b8328",
+    "stateCode": "ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Menta Mint",
+    "id": "62aac703f9c474818f4a9d53",
+    "stateCode": "ST02",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Gram",
+    "id": "62b40ffc26173b9d1d0d7fed",
+    "stateCode": "ST02",
+    "message": "success",
+    "status": true,
+    "seed": false
+  },
+  {
+    "cropName": "Oats",
+    "id": "61763eedda31e632d60b82e7",
+    "stateCode": "ST02,9,PB01,RJ01,HP01",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Berseem",
+    "id": "5fd43e361290536115cf15b5",
+    "stateCode": "ST02,9,PB01,RJ01,HP01,HR01",
+    "message": "success",
+    "status": true,
+    "seed": true
+  },
+  {
+    "cropName": "Rice",
+    "id": "60d5d39fce3a1526d4d1ae57",
+    "stateCode": "ST02,9,PB01,RJ01,HP01,HR01",
+    "message": "success",
+    "status": true,
+    "seed": true
+  }
+]

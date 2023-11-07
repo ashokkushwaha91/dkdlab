@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.view.ReportResultFragmentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/npk_bg"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Soil test report"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/layoutRole"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_border"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/editSoil"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_height"
+                android:background="@null"
+                android:drawableRight="@drawable/ic_drop_down"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:fontFamily="@font/roboto_medium"
+                android:hint="Select Soil"
+                android:imeOptions="actionDone"
+                android:inputType="text|textCapSentences"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <com.agro.dkdlab.custom.ElasticLayout
+            android:id="@+id/buttonCheck"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_background"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="CHECK"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </com.agro.dkdlab.custom.ElasticLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.agro.dkdlab.custom.ElasticLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/rect_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="REPORT"
+                    android:textColor="#404040"
+                    android:textSize="14sp" />
+
+            </com.agro.dkdlab.custom.ElasticLayout>
+
+            <com.agro.dkdlab.custom.ElasticLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rect_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="SEND"
+                    android:textColor="#404040"
+                    android:textSize="14sp" />
+
+            </com.agro.dkdlab.custom.ElasticLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.agro.dkdlab.custom.ElasticLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/rect_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="SAVE"
+                    android:textColor="#404040"
+                    android:textSize="14sp" />
+
+            </com.agro.dkdlab.custom.ElasticLayout>
+
+            <com.agro.dkdlab.custom.ElasticLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rect_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="CLOSE"
+                    android:textColor="#404040"
+                    android:textSize="14sp" />
+
+            </com.agro.dkdlab.custom.ElasticLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

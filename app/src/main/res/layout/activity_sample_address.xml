@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".ui.view.guest.SoilSampleActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/npk_bg"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/select_state_star"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/edit_text_border"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerState"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/select_district_star"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/edit_text_border"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerDistrict"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/select_block_star"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/edit_text_border"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerBlock"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutVillage"
+                    style="@style/TextInputLayoutBoxColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/village_name_star"
+                    app:endIconMode="custom"
+                    app:errorEnabled="true"
+                    app:expandedHintEnabled="false"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editVillage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:hint="Ex. Village name"
+                        android:inputType="textCapSentences"
+                        android:padding="2dp"
+                        android:textSize="@dimen/input_text_size" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutPicCode"
+                    style="@style/TextInputLayoutBoxColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/pin_code_star"
+                    app:endIconMode="custom"
+                    app:errorEnabled="true"
+                    app:expandedHintEnabled="false"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editPinCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:hint="Ex.2764XX"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:padding="2dp"
+                        android:textSize="@dimen/input_text_size" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.agro.dkdlab.custom.ElasticLayout
+                android:id="@+id/btnCollectSample"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/btn_background"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Save"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </com.agro.dkdlab.custom.ElasticLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

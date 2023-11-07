@@ -1,0 +1,2391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint Bumblebee | 2021.1.1 Beta 2">
+
+    <issue
+        id="IidCompatibilityCheckFailure"
+        message="Check failed with exception: java.lang.NoSuchMethodException: com.android.tools.idea.lint.common.LintIdeProject$LintModuleProject.getGradleProjectModel()">
+        <location
+            file="language-packs"/>
+    </issue>
+
+    <issue
+        id="IidCompatibilityCheckFailure"
+        message="Check failed with exception: java.lang.NoSuchMethodException: com.android.tools.idea.lint.AndroidLintIdeProject$LintGradleProject.getGradleProjectModel()">
+        <location
+            file="pspdfkit"/>
+    </issue>
+
+    <issue
+        id="IidCompatibilityCheckFailure"
+        message="Check failed with exception: java.lang.NoSuchMethodException: com.android.tools.idea.lint.AndroidLintIdeProject$LintGradleProject.getGradleProjectModel()">
+        <location
+            file="pspdfkit-tests"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        message="Field requires API level 29 (current min is 21): `android.graphics.text.LineBreaker#BREAK_STRATEGY_SIMPLE`">
+        <location
+            file="src\main\java\com\pspdfkit\internal\utilities\FreeTextAnnotationExtensions.kt"
+            line="257"/>
+    </issue>
+
+    <issue
+        id="InlinedApi"
+        message="Field requires API level 29 (current min is 21): `android.graphics.text.LineBreaker#JUSTIFICATION_MODE_NONE`">
+        <location
+            file="src\main\java\com\pspdfkit\internal\utilities\FreeTextAnnotationExtensions.kt"
+            line="259"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `allowNativeHeapPointerTagging` is only used in API level 30 and higher (current min is 21)">
+        <location
+            file="src\main\AndroidManifest.xml"
+            line="25"/>
+    </issue>
+
+    <issue
+        id="QueryPermissionsNeeded"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this \&#xA;method; see https://g.co/dev/packagevisibility for details">
+        <location
+            file="src\main\java\com\pspdfkit\document\sharing\DocumentSharingIntentHelper.java"
+            line="311"/>
+    </issue>
+
+    <issue
+        id="QueryPermissionsNeeded"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this \&#xA;method; see https://g.co/dev/packagevisibility for details">
+        <location
+            file="src\main\java\com\pspdfkit\document\sharing\DocumentSharingIntentHelper.java"
+            line="311"/>
+    </issue>
+
+    <issue
+        id="QueryPermissionsNeeded"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this \&#xA;method; see https://g.co/dev/packagevisibility for details">
+        <location
+            file="src\main\java\com\pspdfkit\document\sharing\DocumentSharingIntentHelper.java"
+            line="335"/>
+    </issue>
+
+    <issue
+        id="QueryPermissionsNeeded"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this \&#xA;method; see https://g.co/dev/packagevisibility for details">
+        <location
+            file="src\main\java\com\pspdfkit\document\sharing\DocumentSharingIntentHelper.java"
+            line="335"/>
+    </issue>
+
+    <issue
+        id="QueryPermissionsNeeded"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this \&#xA;method; see https://g.co/dev/packagevisibility for details">
+        <location
+            file="src\main\java\com\pspdfkit\internal\document\image\IntentChooserImagePickerFragment.kt"
+            line="446"/>
+    </issue>
+
+    <issue
+        id="QueryPermissionsNeeded"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this \&#xA;method; see https://g.co/dev/packagevisibility for details">
+        <location
+            file="src\main\java\com\pspdfkit\internal\document\image\IntentChooserImagePickerFragment.kt"
+            line="446"/>
+    </issue>
+
+    <issue
+        id="QueryPermissionsNeeded"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this \&#xA;method; see https://g.co/dev/packagevisibility for details">
+        <location
+            file="src\main\java\com\pspdfkit\internal\jni\PSPDFKitNative.java"
+            line="78"/>
+    </issue>
+
+    <issue
+        id="QueryPermissionsNeeded"
+        message="Consider adding a `&lt;queries>` declaration to your manifest when calling this \&#xA;method; see https://g.co/dev/packagevisibility for details">
+        <location
+            file="src\main\java\com\pspdfkit\internal\jni\PSPDFKitNative.java"
+            line="78"/>
+    </issue>
+
+    <issue
+        id="UseSwitchCompatOrMaterialCode"
+        message="Use `SwitchCompat` from AppCompat or `SwitchMaterial` from Material library">
+        <location
+            file="src\main\java\com\pspdfkit\internal\ui\dialog\stamps\CustomStampCreatorLayout.java"
+            line="82"/>
+    </issue>
+
+    <issue
+        id="UseSwitchCompatOrMaterialCode"
+        message="Use `SwitchCompat` from AppCompat or `SwitchMaterial` from Material library">
+        <location
+            file="src\main\java\com\pspdfkit\internal\ui\dialog\stamps\CustomStampCreatorLayout.java"
+            line="83"/>
+    </issue>
+
+    <issue
+        id="UseSwitchCompatOrMaterialCode"
+        message="Use `SwitchCompat` from AppCompat or `SwitchMaterial` from Material library">
+        <location
+            file="src\main\java\com\pspdfkit\internal\ui\dialog\stamps\CustomStampCreatorLayout.java"
+            line="360"/>
+    </issue>
+
+    <issue
+        id="UseSwitchCompatOrMaterialCode"
+        message="Use `SwitchCompat` from AppCompat or `SwitchMaterial` from Material library">
+        <location
+            file="src\main\java\com\pspdfkit\ui\LocalizedSwitch.java"
+            line="25"/>
+    </issue>
+
+    <issue
+        id="SourceLockedOrientationActivity"
+        message="You should not lock orientation of your activities, so that you can support a good user experience for any device or orientation">
+        <location
+            file="src\main\java\com\pspdfkit\internal\ui\dialog\signatures\SignaturePickerDialog.java"
+            line="251"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="158"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="220"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="232"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="236"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="252"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="255"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="255"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="268"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="317"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="325"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="332"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="332"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="333"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="366"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="370"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="382"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="416"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="431"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="478"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="479"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="510"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="515"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="520"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="525"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="530"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="535"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="540"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="545"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="561"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="561"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="561"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="561"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="715"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="717"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="727"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="759"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="763"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="766"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="798"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="798"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="846"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="847"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="858"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="884"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="892"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="903"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="903"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="904"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="905"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="906"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="909"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="913"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="913"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="914"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="915"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="915"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="932"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="976"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="981"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="995"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="1008"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="1018"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="1043"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="1044"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="1044"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="1044"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\AnnotationSelection.kt"
+            line="1092"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\EditMode.kt"
+            line="94"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\EditMode.kt"
+            line="101"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\EditMode.kt"
+            line="108"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\EditMode.kt"
+            line="115"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\EditMode.kt"
+            line="122"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\EditMode.kt"
+            line="129"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\EditMode.kt"
+            line="136"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\EditMode.kt"
+            line="143"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\EditMode.kt"
+            line="150"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\page\PageLayout.java"
+            line="871"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="255"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="264"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="273"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="282"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="306"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="308"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="309"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="313"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="314"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="348"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="351"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="352"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="353"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="357"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="358"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="359"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="368"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="369"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="370"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="374"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="375"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="376"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="408"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="426"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="444"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="462"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="480"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="481"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="482"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="483"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="515"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="516"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="519"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="520"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="523"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="524"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="527"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="528"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="549"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="550"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="550"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="551"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="551"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="554"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="555"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="555"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="556"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="556"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="559"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="560"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="560"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="561"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="561"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="564"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="565"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="565"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="566"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="566"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="569"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="570"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="571"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="571"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="572"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="572"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="575"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="576"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="577"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="577"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="578"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\ResizeGuides.java"
+            line="578"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\RotationHelper.kt"
+            line="23"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\RotationHelper.kt"
+            line="24"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\RotationHelper.kt"
+            line="25"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\RotationHelper.kt"
+            line="26"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\RotationHelper.kt"
+            line="32"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\RotationHelper.kt"
+            line="33"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\RotationHelper.kt"
+            line="34"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\RotationHelper.kt"
+            line="35"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="152"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="155"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="186"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="248"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="257"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="258"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="259"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="260"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="275"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="276"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="277"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="278"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="284"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="285"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="290"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="291"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="311"/>
+    </issue>
+
+    <issue
+        id="VisibleForTests"
+        message="This method should only be accessed from tests or within private scope">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\annotations\selection\SelectionRotationHandler.kt"
+            line="312"/>
+    </issue>
+
+    <issue
+        id="PrivateResource"
+        message="The resource `@dimen/design_bottom_sheet_peek_height_min` is marked as private in com.google.android.material:material:1.5.0-alpha01">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\inspector\bottomsheet\BottomSheetBehavior.java"
+            line="458"/>
+    </issue>
+
+    <issue
+        id="UseCompatTextViewDrawableXml"
+        message="Use `app:drawableStartCompat` instead of `android:drawableStart`">
+        <location
+            file="src\main\res\layout\pspdf__signer_list_item.xml"
+            line="18"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\outline\annotations\AnnotationRecyclerAdapter.kt"
+            line="74"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\outline\annotations\AnnotationRecyclerAdapter.kt"
+            line="82"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\outline\annotations\AnnotationRecyclerAdapter.kt"
+            line="99"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\outline\annotations\AnnotationRecyclerAdapter.kt"
+            line="144"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\outline\annotations\AnnotationRecyclerAdapter.kt"
+            line="151"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\adapters\BookmarkListAdapter.java"
+            line="278"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\adapters\BookmarkListAdapter.java"
+            line="283"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\adapters\BookmarkListAdapter.java"
+            line="347"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\outline\BookmarkListView.java"
+            line="197"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\outline\BookmarkListView.java"
+            line="205"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\outline\BookmarkListView.java"
+            line="466"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\document\editor\DocumentEditorSavingToolbarHandler.java"
+            line="414"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\adapters\MultilevelExpandableIndentableListAdapter.java"
+            line="376"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\document\editor\page\NewPageDialog.java"
+            line="583"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\document\editor\page\NewPageDialog.java"
+            line="987"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\annotations\note\adapter\NoteEditorRecyclerViewAdapter.java"
+            line="230"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\ui\inspector\views\OptionPickerInspectorView.java"
+            line="235"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\ui\inspector\views\OptionPickerInspectorView.java"
+            line="466"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\outline\OutlineListView.java"
+            line="278"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\outline\OutlineListView.java"
+            line="293"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\ui\tabs\PdfTabBarLayout.java"
+            line="185"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\ui\tabs\PdfTabBarLayout.java"
+            line="300"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\ui\tabs\PdfTabBarLayout.java"
+            line="314"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\ui\tabs\PdfTabBarLayout.java"
+            line="339"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\ui\dialog\signatures\RecyclerViewFontAdapter.kt"
+            line="108"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\ui\dialog\signatures\RecyclerViewFontAdapter.kt"
+            line="131"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\ui\dialog\signatures\RecyclerViewFontAdapter.kt"
+            line="137"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\ui\dialog\signatures\SignaturesAdapter.java"
+            line="126"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\ui\dialog\signatures\SignaturesAdapter.java"
+            line="141"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\ui\dialog\signatures\SignerListView.java"
+            line="169"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\ui\dialog\stamps\StampGridLayout.java"
+            line="183"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\ui\thumbnail\ThumbnailAdapter.java"
+            line="182"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\adapters\ThumbnailGridAdapter.java"
+            line="323"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\adapters\ThumbnailGridAdapter.java"
+            line="470"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\document\editor\ThumbnailGridRecyclerView.java"
+            line="526"/>
+    </issue>
+
+    <issue
+        id="Recycle"
+        message="This animation should be started with `#start()`">
+        <location
+            file="src\main\java\com\pspdfkit\internal\utilities\ViewUtils.java"
+            line="440"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (945 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\pspdf__file_icon_push_pin.xml"
+            line="17"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1784 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\pspdf__ic_edit_annotations.xml"
+            line="25"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (872 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\pspdf__ic_form_textfield.xml"
+            line="28"/>
+    </issue>
+
+    <issue
+        id="VectorPath"
+        message="Very long vector path (1614 characters), which is bad for performance. Considering reducing precision, removing minor details or rasterizing vector.">
+        <location
+            file="src\main\res\drawable\pspdf__ic_settings.xml"
+            line="17"/>
+    </issue>
+
+    <issue
+        id="NestedWeights"
+        message="Nested weights are bad for performance">
+        <location
+            file="src\main\res\layout\pspdf__audio_inspector_bar.xml"
+            line="69"/>
+    </issue>
+
+    <issue
+        id="IconXmlAndPng"
+        message="The following images appear both as density independent `.xml` files and as bitmap files: src\main\res\drawable-hdpi\pspdf__ic_add.png, src\main\res\drawable\pspdf__ic_add.xml">
+        <location
+            file="src\main\res\drawable\pspdf__ic_add.xml"/>
+        <location
+            file="src\main\res\drawable-xxxhdpi\pspdf__ic_add.png"/>
+        <location
+            file="src\main\res\drawable-xxhdpi\pspdf__ic_add.png"/>
+        <location
+            file="src\main\res\drawable-xhdpi\pspdf__ic_add.png"/>
+        <location
+            file="src\main\res\drawable-mdpi\pspdf__ic_add.png"/>
+        <location
+            file="src\main\res\drawable-hdpi\pspdf__ic_add.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicates"
+        message="The following unrelated icon files have identical contents: pspdf__ic_settings_jump.png, pspdf__ic_settings_single_layout.png">
+        <location
+            file="src\main\res\drawable-hdpi\pspdf__ic_settings_single_layout.png"/>
+        <location
+            file="src\main\res\drawable-hdpi\pspdf__ic_settings_jump.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicates"
+        message="The following unrelated icon files have identical contents: pspdf__ic_settings_jump.png, pspdf__ic_settings_single_layout.png">
+        <location
+            file="src\main\res\drawable-mdpi\pspdf__ic_settings_single_layout.png"/>
+        <location
+            file="src\main\res\drawable-mdpi\pspdf__ic_settings_jump.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicates"
+        message="The following unrelated icon files have identical contents: pspdf__ic_settings_jump.png, pspdf__ic_settings_single_layout.png">
+        <location
+            file="src\main\res\drawable-xhdpi\pspdf__ic_settings_single_layout.png"/>
+        <location
+            file="src\main\res\drawable-xhdpi\pspdf__ic_settings_jump.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicates"
+        message="The following unrelated icon files have identical contents: pspdf__ic_settings_jump.png, pspdf__ic_settings_single_layout.png">
+        <location
+            file="src\main\res\drawable-xxhdpi\pspdf__ic_settings_single_layout.png"/>
+        <location
+            file="src\main\res\drawable-xxhdpi\pspdf__ic_settings_jump.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicates"
+        message="The following unrelated icon files have identical contents: pspdf__ic_settings_jump.png, pspdf__ic_settings_single_layout.png">
+        <location
+            file="src\main\res\drawable-xxxhdpi\pspdf__ic_settings_single_layout.png"/>
+        <location
+            file="src\main\res\drawable-xxxhdpi\pspdf__ic_settings_jump.png"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="`DragButtonOnTouchListener#onTouch` should call `View#performClick` when a click is detected">
+        <location
+            file="src\main\java\com\pspdfkit\ui\toolbar\ContextualToolbar.java"
+            line="1300"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view `ContextualToolbarMenuBar` overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="src\main\java\com\pspdfkit\ui\toolbar\ContextualToolbarMenuBar.java"
+            line="190"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view `DocumentView` overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\document\DocumentView.java"
+            line="2106"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="`PageLayout#performClick` should call `super#performClick`">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\page\PageLayout.java"
+            line="834"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="`PageLayout#onTouchEvent` should call `PageLayout#performClick` when a click is detected">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\page\PageLayout.java"
+            line="855"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="`PageView#performClick` should call `super#performClick`">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\page\PageView.java"
+            line="383"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view `PdfOutlineView` overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="src\main\java\com\pspdfkit\ui\PdfOutlineView.java"
+            line="251"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view `PdfSearchViewInline` overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="src\main\java\com\pspdfkit\ui\search\PdfSearchViewInline.java"
+            line="533"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view `PdfSearchViewModular` overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="src\main\java\com\pspdfkit\ui\search\PdfSearchViewModular.java"
+            line="587"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view `PdfStaticThumbnailBar` overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="src\main\java\com\pspdfkit\ui\thumbnail\PdfStaticThumbnailBar.java"
+            line="508"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view `SpecialModeView` overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="src\main\java\com\pspdfkit\internal\views\page\SpecialModeView.java"
+            line="254"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="`onTouch` lambda should call `View#performClick` when a click is detected">
+        <location
+            file="src\main\java\com\pspdfkit\internal\vendor\universalvideoview\UniversalMediaController.java"
+            line="118"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view `UniversalMediaController` overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="src\main\java\com\pspdfkit\internal\vendor\universalvideoview\UniversalMediaController.java"
+            line="611"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view `VerticalScrollBar` overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="src\main\java\com\pspdfkit\ui\scrollbar\VerticalScrollBar.java"
+            line="300"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        message="Custom view `WrapContentViewPager` overrides `onTouchEvent` but not `performClick`">
+        <location
+            file="src\main\java\com\pspdfkit\internal\ui\views\WrapContentViewPager.kt"
+            line="65"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__custom_stamp_creator_layout.xml"
+            line="65"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__document_info_view.xml"
+            line="22"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__draw_electronic_signature_dialog_layout.xml"
+            line="62"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout-land\pspdf__draw_electronic_signature_layout.xml"
+            line="62"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__draw_electronic_signature_layout.xml"
+            line="63"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__image_electronic_signature_dialog_layout.xml"
+            line="33"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__image_electronic_signature_dialog_layout.xml"
+            line="65"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout-land\pspdf__image_electronic_signature_layout.xml"
+            line="33"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__image_electronic_signature_layout.xml"
+            line="33"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout-land\pspdf__image_electronic_signature_layout.xml"
+            line="65"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__image_electronic_signature_layout.xml"
+            line="66"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__page_binding_view.xml"
+            line="24"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__pdf_activity.xml"
+            line="96"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__pdf_activity.xml"
+            line="119"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout-land\pspdf__signature_layout_add_new_signature.xml"
+            line="46"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__signature_layout_add_new_signature.xml"
+            line="48"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout-land\pspdf__signature_layout_add_new_signature.xml"
+            line="59"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__signature_layout_add_new_signature.xml"
+            line="61"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__signer_list_selected_item.xml"
+            line="34"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__tab_item.xml"
+            line="39"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__thumbnail_grid_view.xml"
+            line="26"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__typing_electronic_signature_dialog_layout.xml"
+            line="118"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout-land\pspdf__typing_electronic_signature_layout.xml"
+            line="101"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__typing_electronic_signature_layout.xml"
+            line="118"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image">
+        <location
+            file="src\main\res\layout\pspdf__view_empty_activity.xml"
+            line="10"/>
+    </issue>
+
+    <issue
+        id="KeyboardInaccessibleWidget"
+        message="&apos;clickable&apos; attribute found, please also add &apos;focusable&apos;">
+        <location
+            file="src\main\res\layout\pspdf__view_inspector_color_picker.xml"
+            line="21"/>
+    </issue>
+
+    <issue
+        id="KeyboardInaccessibleWidget"
+        message="&apos;clickable&apos; attribute found, please also add &apos;focusable&apos;">
+        <location
+            file="src\main\res\layout\pspdf__view_inspector_color_picker.xml"
+            line="21"/>
+    </issue>
+
+    <issue
+        id="KeyboardInaccessibleWidget"
+        message="&apos;clickable&apos; attribute found, please also add &apos;focusable&apos;">
+        <location
+            file="src\main\res\layout\pspdf__view_inspector_font_list_item.xml"
+            line="16"/>
+    </issue>
+
+    <issue
+        id="KeyboardInaccessibleWidget"
+        message="&apos;clickable&apos; attribute found, please also add &apos;focusable&apos;">
+        <location
+            file="src\main\res\layout\pspdf__view_inspector_font_list_item.xml"
+            line="16"/>
+    </issue>
+
+    <issue
+        id="KeyboardInaccessibleWidget"
+        message="&apos;clickable&apos; attribute found, please also add &apos;focusable&apos;">
+        <location
+            file="src\main\res\layout\pspdf__view_inspector_font_picker.xml"
+            line="21"/>
+    </issue>
+
+    <issue
+        id="KeyboardInaccessibleWidget"
+        message="&apos;clickable&apos; attribute found, please also add &apos;focusable&apos;">
+        <location
+            file="src\main\res\layout\pspdf__view_inspector_font_picker.xml"
+            line="21"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        message="Missing accessibility label: provide either a view with an `android:labelFor` that references this view or provide an `android:hint`">
+        <location
+            file="src\main\res\layout\pspdf__typing_electronic_signature_dialog_layout.xml"
+            line="55"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        message="Missing accessibility label: provide either a view with an `android:labelFor` that references this view or provide an `android:hint`">
+        <location
+            file="src\main\res\layout-land\pspdf__typing_electronic_signature_layout.xml"
+            line="55"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        message="Missing accessibility label: provide either a view with an `android:labelFor` that references this view or provide an `android:hint`">
+        <location
+            file="src\main\res\layout\pspdf__typing_electronic_signature_layout.xml"
+            line="56"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Number formatting does not take into account locale settings. Consider using `String.format` instead.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\annotations\note\adapter\viewholder\ContentCardItemViewHolder.java"
+            line="247"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Number formatting does not take into account locale settings. Consider using `String.format` instead.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\annotations\note\adapter\viewholder\ContentCardItemViewHolder.java"
+            line="258"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Number formatting does not take into account locale settings. Consider using `String.format` instead.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\annotations\note\adapter\viewholder\ContentCardItemViewHolder.java"
+            line="269"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="Number formatting does not take into account locale settings. Consider using `String.format` instead.">
+        <location
+            file="src\main\java\com\pspdfkit\internal\annotations\note\adapter\viewholder\ContentCardItemViewHolder.java"
+            line="280"/>
+    </issue>
+
+    <issue
+        id="RelativeOverlap"
+        message="`@id/pspsdf__style_header_container` can overlap `@id/pspdf__note_item_style_box_chevron` if @id/pspsdf__style_header_container grows due to localized text expansion">
+        <location
+            file="src\main\res\layout-small\pspdf__note_editor_style_box_header.xml"
+            line="11"/>
+    </issue>
+
+    <issue
+        id="RelativeOverlap"
+        message="`@id/pspdf__note_item_style_box_current_style` can overlap `@id/pspdf__note_item_style_box_title` if @string/pspdf__note_editor_style, @id/pspdf__note_item_style_box_current_style grow due to localized text expansion">
+        <location
+            file="src\main\res\layout\pspdf__note_editor_style_box_header.xml"
+            line="47"/>
+    </issue>
+
+    <issue
+        id="RelativeOverlap"
+        message="`@id/pspdf__pager_list_view_footer` can overlap `@id/pspdf__pager_list_view_footer_progress_bar` if @id/pspdf__pager_list_view_footer grows due to localized text expansion">
+        <location
+            file="src\main\res\layout\pspdf__outline_pager_list_footer.xml"
+            line="20"/>
+    </issue>
+
+</issues>

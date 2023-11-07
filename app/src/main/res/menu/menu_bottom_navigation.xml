@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_home"
+        />
+
+    <item android:id="@+id/menu_users"
+        android:title="Users"
+        android:icon="@drawable/ic_user"
+        />
+
+   <!-- <item android:id="@+id/menu_gis"
+        android:title="GIS"
+        android:icon="@drawable/ic_icon_metro_profile"
+        />-->
+    <item android:id="@+id/menu_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_icon_metro_profile"
+        />
+
+</menu>

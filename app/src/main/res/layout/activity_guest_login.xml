@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.view.login.GuestLoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/layout_margin"
+            android:paddingRight="@dimen/layout_margin">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/ic_login"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/login"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:text="We will send you an ONE TIME PASSWORD on this mobile number"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textTimer"
+                app:layout_constraintTop_toTopOf="@+id/textTimer" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="@string/mobile_number"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputLayoutMobile"
+                style="@style/TextInputLayoutBoxColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/button_top_margin"
+                android:hint="@string/enter_mobile_number"
+                app:endIconMode="custom"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editMobile"
+                    android:digits="0123456789"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:inputType="number"
+                    android:textSize="@dimen/input_text_size"
+                    android:maxLength="10"
+                    android:padding="2dp"
+                    android:imeOptions="actionDone"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.agro.dkdlab.custom.ElasticLayout
+               android:id="@+id/layoutSendOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/button_top_margin"
+                android:background="@drawable/btn_background"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_next_arrow"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/get_otp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </com.agro.dkdlab.custom.ElasticLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

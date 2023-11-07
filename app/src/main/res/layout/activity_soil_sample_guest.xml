@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".ui.view.guest.SoilSampleActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/npk_bg"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewFarmerPic"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/rect_bg"
+                        android:padding="2dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_users" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutCameraIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/white"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_camera" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="@string/farmer_photo"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutName"
+                    style="@style/TextInputLayoutBoxColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edit_top_margin"
+                    android:hint="@string/farmer_name_star"
+                    app:endIconMode="none"
+                    app:errorEnabled="true"
+                    app:expandedHintEnabled="false"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editFarmerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:hint="Ex. Manoj"
+                        android:inputType="textCapWords"
+                        android:padding="2dp"
+                        android:textSize="@dimen/input_text_size" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutFatherName"
+                    style="@style/TextInputLayoutBoxColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edit_top_margin"
+                    android:hint="@string/father_name_star"
+                    app:endIconMode="custom"
+                    app:errorEnabled="true"
+                    app:expandedHintEnabled="false"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editFatherName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:hint="Ex. Ramesh"
+                        android:inputType="textCapWords"
+                        android:padding="2dp"
+                        android:textSize="@dimen/input_text_size" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutMobileNumber"
+                    style="@style/TextInputLayoutBoxColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edit_top_margin"
+                    android:hint="@string/enter_farmer_mobile_number_star"
+                    app:endIconMode="custom"
+                    app:errorEnabled="true"
+                    app:expandedHintEnabled="false"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:hint="Ex.6545xxxxxx"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="2dp"
+                        android:textSize="@dimen/input_text_size" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutLocation"
+                    style="@style/TextInputLayoutBoxColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/khasra_location_star"
+                    app:endIconMode="custom"
+                    app:errorEnabled="true"
+                    app:endIconDrawable="@drawable/ic_address"
+                    app:endIconTint="@color/black"
+                    app:expandedHintEnabled="false"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:maxLines="2"
+                        android:focusable="false"
+                        android:hint="Ex. Patanjali Yogpeeth Haridwar 952405"
+                        android:inputType="text|textMultiLine"
+                        android:padding="2dp"
+                        android:textSize="@dimen/input_text_size" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutKhasra"
+                    style="@style/TextInputLayoutBoxColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/khasra_number_star"
+                    app:endIconMode="custom"
+                    app:errorEnabled="true"
+                    app:expandedHintEnabled="false"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editKhasra"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:hint="Ex. 304"
+                        android:inputType="text"
+                        android:padding="2dp"
+                        android:textSize="@dimen/input_text_size" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutLandSize"
+                    style="@style/TextInputLayoutBoxColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edit_top_margin"
+                    android:hint="@string/land_area_acre_star"
+                    app:endIconMode="custom"
+                    app:errorEnabled="true"
+                    app:expandedHintEnabled="false"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editLandSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:hint="Ex. 1.5"
+                        android:inputType="numberDecimal"
+                        android:padding="2dp"
+                        android:maxLength="6"
+                        android:textSize="@dimen/input_text_size" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutSampleCode"
+                    style="@style/TextInputLayoutBoxColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edit_top_margin"
+                    android:hint="Sample code"
+                    app:endIconMode="custom"
+                    app:errorEnabled="true"
+                    app:expandedHintEnabled="false"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editSampleCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:hint="Ex.65456874679xxxxx"
+                        android:inputType="number"
+                        android:maxLength="16"
+                        android:padding="2dp"
+                        android:textSize="@dimen/input_text_size" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/select_gender_star"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/male"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/female"
+                        android:textColor="@color/textColor"
+                        android:textSize="15sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/select_category_star"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/edit_text_border"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutCropName"
+                    style="@style/TextInputLayoutBoxColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/select_last_crop_name_star"
+                    android:visibility="visible"
+                    app:endIconDrawable="@drawable/ic_drop_down"
+                    app:endIconMode="custom"
+                    app:errorEnabled="true"
+                    app:expandedHintEnabled="false"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editCropName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:focusable="false"
+                        android:hint="Ex. Rice"
+                        android:inputType="textCapWords"
+                        android:padding="2dp"
+                        android:textSize="@dimen/input_text_size" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutOtherCrop"
+                    style="@style/TextInputLayoutBoxColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/last_crop_name_star"
+                    android:visibility="gone"
+                    app:endIconMode="custom"
+                    app:errorEnabled="true"
+                    app:expandedHintEnabled="false"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editOtherCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:hint="Ex.Rice"
+                        android:inputType="textCapWords"
+                        android:textSize="@dimen/input_text_size" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputLayoutIrrigationType"
+                    style="@style/TextInputLayoutBoxColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edit_top_margin"
+                    android:hint="@string/select_irrigation_type_star"
+                    app:endIconDrawable="@drawable/ic_drop_down"
+                    app:endIconMode="custom"
+                    app:errorEnabled="true"
+                    app:expandedHintEnabled="false"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editIrrigationType"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_height"
+                        android:focusable="false"
+                        android:hint="Ex. Tube well"
+                        android:inputType="textCapWords"
+                        android:padding="2dp"
+                        android:textSize="@dimen/input_text_size" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.agro.dkdlab.custom.ElasticLayout
+                android:id="@+id/btnCollectSample"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/btn_background"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Submit"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </com.agro.dkdlab.custom.ElasticLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

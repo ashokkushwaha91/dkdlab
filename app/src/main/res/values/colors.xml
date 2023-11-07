@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#d84315</color>
+    <color name="colorPrimaryDark">#bf360c</color>
+    <color name="colorAccent">#ff6e40</color>
+
+    <color name="colorRecieveText">#00FF00</color>
+    <color name="colorSendText">#82CAFF</color>
+    <color name="colorStatusText">#FFDB58</color>
+
+    <color name="green_dark">#33691E</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="green_200">#A5D6A7</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="green_700">#4CAF50</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="border">#D04A4A4A</color>
+    <color name="button_color">#F0521A</color>
+    <color name="red">#FF5722</color>
+    <color name="unverified">#FAB39D</color>
+    <color name="textColor">#4a4a4a</color>
+    <color name="orange">#FF5722</color>
+    <color name="yellow">#FFAA00</color>
+    <color name="green">#0A7A49</color>
+    <color name="greenLight">#4EC18F</color>
+    <color name="lightGray">#EFF5F7</color>
+    <color name="gray">#BDBDBD</color>
+
+    <color name="button_start_color">#F79D50</color>
+    <color name="button_end_color">#F79D50</color>
+    <color name="list_item_value">#C14A4A4A</color>
+    <color name="darkGray">#E5E5E5</color>
+    <color name="edit_shadow">#0D000033</color>
+
+
+
+    <color name="color_unfill_underline">#aaa</color>
+    <color name="color_fill_underline">#210333</color>
+    <color name="color_focus_underline">#FF6200EE</color>
+    <color name="text_lebel_unfill">#aaa</color>
+    <color name="text_lebel_fill">#210333</color>
+    <color name="text_lebel_focus">#FF6200EE</color>
+    <color name="dashboard_color">#9A2674EF</color>
+
+</resources>
