@@ -16,11 +16,13 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.activity.viewModels
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
 import com.agro.dkdlab.BuildConfig
 import com.agro.dkdlab.R
 import com.agro.dkdlab.app.AppPermission.checkStoragePermission
+import com.agro.dkdlab.app.MyApp
 import com.agro.dkdlab.custom.Util.capitalizeWords
 import com.agro.dkdlab.custom.Util.fromJson
 import com.agro.dkdlab.custom.Util.getProgress
@@ -28,6 +30,7 @@ import com.agro.dkdlab.custom.Util.json
 import com.agro.dkdlab.custom.Util.showAlert
 import com.agro.dkdlab.network.config.Status
 import com.agro.dkdlab.network.model.SoilSampleModel
+import com.agro.dkdlab.ui.view.FertilizerCalculationActivity
 import com.agro.dkdlab.ui.view.FertilizerRecommendationActivity
 import com.agro.dkdlab.ui.view.ManualFertilizerCalculatorActivity
 import com.agro.dkdlab.ui.viewmodel.MainViewModel
@@ -46,6 +49,7 @@ class ReportDetailsActivity : AppCompatActivity() {
     private var bitmap:Bitmap?=null
     lateinit var soilSampleResult:SoilSampleModel
     private val viewModel by viewModels<MainViewModel>()
+    @RequiresApi(Build.VERSION_CODES.R)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_report_details2)
@@ -55,6 +59,7 @@ class ReportDetailsActivity : AppCompatActivity() {
         supportActionBar!!.setDisplayShowHomeEnabled(true)
         collapsing_toolbar.isTitleEnabled = true
         toolbar.setNavigationOnClickListener { view -> onBackPressed() }
+        getCrop()
          soilSampleResult = intent.getStringExtra("sampleData")!!.fromJson()
         soilSampleResult.let {
             collapsing_toolbar.title = it.farmerName?.capitalizeWords()
@@ -88,6 +93,9 @@ class ReportDetailsActivity : AppCompatActivity() {
             phValue.text = it.phRangName
         }
 
+        var model=Build.MANUFACTURER
+        Log.e("Model:" ,"onCreate: $model")
+        btnShare.visibility=if(model=="LANDI") View.GONE else View.VISIBLE
         btnShare.setOnClickListener {
             if (Environment.isExternalStorageManager()) {
                 if (checkStoragePermission()) {
@@ -102,7 +110,9 @@ class ReportDetailsActivity : AppCompatActivity() {
             }
         }
         layoutOrganicFert.setOnClickListener {
-            fertCalculateManual()
+//            fertCalculateManual()
+                    startActivity(Intent(this, FertilizerCalculationActivity::class.java)
+                        .putExtra("sampleData",  soilSampleResult.json()))
         }
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -118,6 +128,28 @@ class ReportDetailsActivity : AppCompatActivity() {
              return true
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun getCrop() {
+        //val pd = getProgress()
+        viewModel.getCropMasterNative("English","UK000410").observe(this){
+            it?.let { resource->
+                when (resource.status) {
+                    Status.SUCCESS -> {
+                            Log.e("cropModel==>", it.data!!.json())
+                            MyApp.get().setCropData(it.data!!.sortedBy { it.cropName }.json())
+                    }
+                    Status.ERROR -> {
+                        if (it.message == "internet") {
+                            showAlert(getString(R.string.network_error),getString(R.string.no_internet))
+                        } else {
+                            showAlert(getString(R.string.error), it.message.toString())
+                        }
+                    }
+                    else -> {}
+                }
+            }
+        }
     }
 
     private fun fertCalculateManual() {

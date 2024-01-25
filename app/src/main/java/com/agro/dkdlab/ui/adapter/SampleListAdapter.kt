@@ -47,6 +47,8 @@ class SampleListAdapter(val list: List<SoilSampleModel>, userRole: String) :
         holder.itemView.textViewFarmerName.text = "${sampleData.farmerName?.capitalizeWords()}"
         holder.itemView.textViewSize.text = "${holder.itemView.context.getString(R.string.farm_size)} : ${sampleData.farmSize} ${holder.itemView.context.getString(R.string.acre)} "
         holder.itemView.textViewLatLng.text = "Lat, Lng : ${"%.5f".format(sampleData.latitude)}, ${"%.5f".format(sampleData.longitude)}"
+
+        holder.itemView.textViewLatLng.visibility=if(sampleData.latitude==0.0) View.GONE else View.VISIBLE
         holder.itemView.setOnClickListener {
             itemClick?.invoke(searchSampleList[position])
         }

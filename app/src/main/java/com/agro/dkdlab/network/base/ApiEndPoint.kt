@@ -4,6 +4,7 @@ import com.agro.dkdlab.network.model.*
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import com.agro.dkdlab.network.model.SoilSampleModel
+import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.*
 
@@ -34,6 +35,9 @@ interface ApiEndPoint {
     @JvmSuppressWildcards
     suspend fun updateSoilSampleByBarCode(@Body body: Map<String, Any>): Response<CreateSampleModel>
 
+    @GET("getCropMasterNative")
+    suspend fun getCropMasterNative(@Query("language") language: String,@Query("villageCode") villageCode: String): Response<List<CropModel>>
+
     @GET("soilHealthCardManual")
     suspend fun storeFertCalcManual(
         @Query("farmSize") farmSize: String,
@@ -47,6 +51,13 @@ interface ApiEndPoint {
 
     @GET("soilSampleByPrimaryPhoneV1/{primaryPhone}")
     suspend fun soilSampleByPrimaryPhone(@Path("primaryPhone") primaryPhone:String): Response<List<SoilSampleModel>>
+
+    @GET("landConverterUnit")
+    suspend fun landConverterUnit(): Response<List<UnitResponse>>
+
+    @POST("landConverter")
+    suspend fun landConverter(@Body body: HashMap<String, String>): Response<ConverterResponse>
+
 
     @Multipart
     @POST("createSoilSampleV1")
@@ -87,5 +98,20 @@ interface ApiEndPoint {
 
     @GET("soilSampleByVillageNameV1/{villageName}")
     suspend fun soilSampleByVillageName(@Path("villageName") villageName:String): Response<List<SampleList>>
+
+    @GET("storeFertCalcCombinationV2")
+    suspend fun storeFertelizerCalcCombination(
+        @Query("userId") userId: String,
+        @Query("cropId") cropId: String,
+        @Query("farmSize") farmSize: String,
+        @Query("nRangName") nRangName: String,
+        @Query("pRangName") pRangName: String,
+        @Query("kRangName") kRangName: String,
+        @Query("ocRangName") ocRangName: String,
+        @Query("phRangName") phRangName: String,
+        @Query("language") language: String,
+    ): Response<FertCalcModel>
+    @GET("seedValueCalculation")
+    suspend fun getseedValueCalculation(@Query("farmId") farmId: String,@Query("cropId") cropId: String,@Query("language") language: String,@Query("stateCode") stateCode: String): Response<List<String>>
 
 }

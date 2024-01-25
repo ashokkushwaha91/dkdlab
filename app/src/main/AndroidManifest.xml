@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.agro.dkdlab">
+    package="com.agro.dkdlab" >
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -14,14 +15,19 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
 
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
     <uses-feature android:name="android.hardware.usb.host" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 
     <uses-permission android:name="android.permission.USB_PERMISSION" />
 
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
-
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
     <application
         android:name=".app.MyApp"
         android:allowBackup="false"
@@ -37,7 +43,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DkdLab"
         android:usesCleartextTraffic="true"
-        tools:replace="android:allowBackup">
+        tools:replace="android:allowBackup" >
         <activity
             android:name=".ui.view.Test"
             android:exported="false" />
@@ -45,6 +51,18 @@
             android:name=".ui.view.FertilizerRecommendationActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.view.FertilizerCalDetailsNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.CropListActivity"
+            android:exported="false" />
+      <activity
+            android:name=".ui.view.SeedRecommendationActivity"
+            android:exported="false" />
+       <activity
+            android:name=".ui.view.FertilizerCalculationActivity"
+            android:exported="false" />
+       <activity
             android:name=".ui.view.ManualFertilizerCalculatorActivity"
             android:exported="false" />
         <activity
@@ -72,6 +90,9 @@
             android:name=".ui.view.guest.SoilSampleActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.view.guest.AreaConverterActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.view.UserProfileActivity"
             android:exported="false" />
         <activity
@@ -94,15 +115,17 @@
             android:exported="false" />
         <activity
             android:name=".ui.view.SplashActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <!--<intent-filter>
+            <!--
+            <intent-filter>
                 <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
 
             <meta-data
                 android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
@@ -120,7 +143,7 @@
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.agro.dkdlab.provider"
             android:exported="false"
-            android:grantUriPermissions="true">
+            android:grantUriPermissions="true" >
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_path" />

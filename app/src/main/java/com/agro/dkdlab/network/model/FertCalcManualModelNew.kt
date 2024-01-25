@@ -1,0 +1,26 @@
+package com.agro.dkdlab.network.model
+
+data class FertCalcManualModelNew(
+    val cropId : String,
+    val title : String,
+    val cropName : String,
+    val cropNameInHindi : String,
+    val dap : Double,
+    val id : String,
+    val khasraNumber : String,
+    val mixFert102626 : Double,
+    val mixFert123216 : Double,
+    val mop : Double,
+    val organicSentenceFour : String,
+    val organicSentenceOne : String,
+    val organicSentenceThree : String,
+    val organicSentenceTwo : String,
+    val organicSentenceFive : String,
+    val footerSentenceOne : String,
+    val footerSentenceTwo : String,
+    val footerSentenceThree : String,
+    val ssp : Double,
+    val urea : Double,
+    var farmingType : String = "0",
+    val farmSize : Double,
+)

@@ -7,9 +7,9 @@ import android.content.Intent
 import android.location.Location
 import android.location.LocationManager
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.os.Environment
-import android.os.StrictMode
 import android.provider.MediaStore
 import android.provider.Settings
 import android.util.Log
@@ -19,7 +19,9 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.RadioButton
+import android.widget.Toast
 import androidx.activity.viewModels
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.agro.dkdlab.R
@@ -47,8 +49,12 @@ import com.agro.dkdlab.ui.view.MultipleCropSelectionActivity
 import com.agro.dkdlab.ui.viewmodel.ReportViewModel
 import com.agro.dkdlab.ui.viewmodel.SoilSampleViewModel
 import com.bumptech.glide.Glide
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.appbarlayout.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
@@ -56,6 +62,7 @@ import okhttp3.RequestBody
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
+
 
 @AndroidEntryPoint
 class SoilSampleActivity : AppCompatActivity() {
@@ -74,7 +81,7 @@ class SoilSampleActivity : AppCompatActivity() {
     private var uploadImageSize = 0
     private var uploadImageResponseSize = 0
 
-    private lateinit var locationManager: LocationManager
+    private var locationManager: LocationManager?=null
     var locationGps: Location? = null
     private var surveyImagesParts = ArrayList<MultipartBody.Part>()
     private var currentCropping = ""
@@ -88,13 +95,17 @@ class SoilSampleActivity : AppCompatActivity() {
 
     private val soilSampleViewModel by viewModels<SoilSampleViewModel>()
     private val viewModel: ReportViewModel by viewModels()
+
+    private lateinit var fusedLocationClient: FusedLocationProviderClient
+    @RequiresApi(Build.VERSION_CODES.P)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySoilSampleGuestBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
         textTitle.text = "Soil Sample"
-        val builder = StrictMode.VmPolicy.Builder()
-        StrictMode.setVmPolicy(builder.build())
+//        val builder = StrictMode.VmPolicy.Builder()
+//        StrictMode.setVmPolicy(builder.build())
         hideKeyboard()
 //        fetchLocation()
         bindCategory()
@@ -119,7 +130,14 @@ class SoilSampleActivity : AppCompatActivity() {
             startActivityForResult(Intent(this, SampleAddressActivity::class.java), location)
         }
         binding.btnCollectSample.setOnClickListener {
-            validateForm()
+            /*if(latitude==0.0) {
+                if (hasLocationPermissions()) {
+                    fetchLocation()
+                    validateForm()
+                }
+                else askLocationPermission(200)
+            } else*/
+             validateForm()
         }
         /* binding.editKhasra.setOnClickListener {
               startActivityForResult(Intent(this, UserVillageActivity::class.java),khasraCode)
@@ -154,6 +172,10 @@ class SoilSampleActivity : AppCompatActivity() {
                 startActivityForResult(cameraIntent, farmerPhotoCode)
             }
         }
+
+        binding.txtAreaConverter.setOnClickListener {
+            startActivity(Intent(this,AreaConverterActivity::class.java))
+        }
     }
 
 
@@ -181,6 +203,7 @@ class SoilSampleActivity : AppCompatActivity() {
             }
     }
 
+    @RequiresApi(Build.VERSION_CODES.P)
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         when {
             requestCode == location && resultCode === RESULT_OK -> {
@@ -232,11 +255,14 @@ class SoilSampleActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
     }
 
+    @RequiresApi(Build.VERSION_CODES.P)
     private fun validateForm() {
         when {
              /*latitude==0.0-> {
                  showToast("Location not found")
-//                 fetchLocation()
+                 if (hasLocationPermissions())
+                   fetchLocation()
+                 else askLocationPermission(200)
              }*/
 //            longitude==0.0->showToast("Location not found")
             binding.editFarmerName.text.toString().trim().isEmpty() -> {
@@ -438,45 +464,29 @@ class SoilSampleActivity : AppCompatActivity() {
         surveyImagesParts.add(file)
     }
 
+    @RequiresApi(Build.VERSION_CODES.P)
     @SuppressLint("MissingPermission")
     private fun fetchLocation() {
         locationManager = this.getSystemService(Context.LOCATION_SERVICE) as LocationManager
-        var hasGps = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)
-//        var hasNetwork = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
-        if (hasGps) {
-            /*locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 0F, object :
-                LocationListener {
-                override fun onLocationChanged(locationGps: Location) {
-                    if (locationGps != null) {
-//                            showToast("GPS Longitude: ${locationGps!!.longitude} Latitude: ${locationGps!!.latitude}")
-                        latitude = locationGps.latitude
-                        longitude = locationGps.longitude
-                        Log.e("locationSample: ","$latitude : $longitude" )
-                    }
-                }
-                override fun onStatusChanged(provider: String, status: Int, extras: Bundle) {
-                    Log.e("GPS", "onStatusChanged")
-//                        showToast("onStatusChanged")
-                }
-                override fun onProviderEnabled(provider: String) {
-                    Log.e("GPS", "onProviderEnabled")
-//                        showToast("onProviderEnabled")
-                }
-                override fun onProviderDisabled(provider: String) {
-                    Log.e("GPS", "onProviderDisabled")
-//                        showToast("onProviderDisabled")
-                }
-            })*/
+        var hasGps = locationManager?.isProviderEnabled(LocationManager.GPS_PROVIDER)
+        if (hasGps == true) {
+             val locationResult: MyLocation.LocationResult = object : MyLocation.LocationResult() {
+               override fun gotLocation(location: Location?) {
+                   //Got the location!
+                   latitude=location?.latitude?:0.0
+                   longitude=location?.longitude?:0.0
+                   Log.e("locationSample: ","${location?.latitude} : ${location?.longitude}" )
+//                   CoroutineScope(Dispatchers.Main).launch {
+//                       showToast("latitude:${location?.latitude}")
+//                   }
 
-           /* val localGpsLocation =
-                locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER)
-            if (localGpsLocation != null) {
-                locationGps = localGpsLocation
-                latitude = locationGps?.latitude!!
-                longitude = locationGps?.longitude!!
-            }*/
+               }
+           }
+            val myLocation = MyLocation()
+            myLocation.getLocation(this, locationResult)
 
-           var mLocationManager = applicationContext.getSystemService(LOCATION_SERVICE) as LocationManager
+
+           /*var mLocationManager = applicationContext.getSystemService(LOCATION_SERVICE) as LocationManager
             val providers: List<String> = mLocationManager.getProviders(true)
             var bestLocation: Location? = null
             for (provider in providers) {
@@ -486,9 +496,9 @@ class SoilSampleActivity : AppCompatActivity() {
                     bestLocation = l
                     latitude = bestLocation.latitude
                     longitude = bestLocation.longitude
+                    showToast("Location :${bestLocation.latitude}:${bestLocation.longitude}")
                 }
-            }
-
+            }*/
         } else {
             startActivity(Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS))
         }
@@ -509,9 +519,12 @@ class SoilSampleActivity : AppCompatActivity() {
         stopLocationUpdates()
     }
 
+    @RequiresApi(Build.VERSION_CODES.P)
     override fun onResume() {
         super.onResume()
-        fetchLocation()
+        if (hasLocationPermissions())
+           fetchLocation()
+        else askLocationPermission(200)
     }
 
     override fun onDestroy() {

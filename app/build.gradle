@@ -16,8 +16,8 @@ android {
         applicationId "com.agro.dkdlab"
         minSdk 21
         targetSdk 32
-        versionCode 3
-        versionName "1.2"
+        versionCode 5
+        versionName "1.4"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -60,7 +60,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 
-    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
     implementation 'com.google.android.gms:play-services-maps:18.0.0'
     implementation 'androidx.test:core-ktx:1.4.0'
     implementation 'com.google.android.play:core-ktx:1.8.1'
@@ -98,6 +98,8 @@ dependencies {
 
 //    kapt 'androidx.hilt:hilt-compiler:1.0.0'
     implementation "androidx.activity:activity-ktx:1.4.0"
+
+    implementation 'com.google.android.gms:play-services-identity:18.0.1'
 
 
     //LifeCycle

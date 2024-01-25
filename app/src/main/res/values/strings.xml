@@ -387,4 +387,35 @@
     <string name="village_name_star">Village Name<font color='#FF0000'> *</font></string>
     <string name="enter_address">Enter address</string>
     <string name="pin_code_star">Pin code<font color='#FF0000'> *</font></string>
+    <string name="change_crop">Change crop</string>
+    <string name="organic_farming">Organic Farming</string>
+    <string name="inorganic_farming">Inorganic Farming</string>
+    <string name="inorganic_farming25">Mixed 25% Inorganic</string>
+    <string name="inorganic_farming50">Mixed 50% Inorganic</string>
+    <string name="inorganic_farming75">Mixed 75% Inorganic</string>
+    <string name="forming_method_value1">Green manure</string>
+    <string name="forming_method_value2">Organic manure</string>
+    <string name="recommendation">Organic recommendation per acre</string>
+    <string name="organic_fertilizer">Organic Fertilizer</string>
+    <string name="bio_fertilizer">Bio Fertilizer</string>
+    <string name="farmsize">Farm size:</string>
+    <string name="seed_dose">Seed recommendation</string>
+    <string name="fert_dose">Fertilizer Dose</string>
+    <string name="dap_mop_urea">DAP/MOP/UREA</string>
+    <string name="first_irrigation_time">First irrigation time</string>
+    <string name="second_fertilization">Second fertilization</string>
+    <string name="applytheamount">Apply the following amounts</string>
+    <string name="atsowing">At sowing time</string>
+    <string name="first_fertilization">First fertilization</string>
+    <string name="add_crop">Add Crop</string>
+    <string name="_22_24_kg">22-24 KG</string>
+    <string name="_0_50_acre">0.50 Acre</string>
+    <string name="recomanded_seed">Recommended seed</string>
+    <string name="select">Select</string>
+    <string name="seed_calculation">Seed calculation</string>
+    <string name="search_crop">Search crop</string>
+    <string name="crop_list">Crop List</string>
+    <string name="area_converter">Area Converter</string>
+
+
 </resources>

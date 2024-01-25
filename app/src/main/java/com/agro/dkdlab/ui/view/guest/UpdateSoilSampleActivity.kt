@@ -586,7 +586,12 @@ class UpdateSoilSampleActivity : AppCompatActivity(), DataListener, WarmingListe
         Log.e( "onOptionsItemSelected: ", "${listItems.size}")
         if(listItems.size>0) {
             binding.layoutStatus.visibility=VISIBLE
-            val item: ListItem = listItems[0]
+            var item: ListItem = listItems[0]
+            //  for pc panel
+            if ((item.driver == null) && (listItems.size >= 2)) {
+                item = listItems[1]
+            }
+            // end for pc panel
             deviceId=item.device.deviceId
             portNum=item.port
             when{

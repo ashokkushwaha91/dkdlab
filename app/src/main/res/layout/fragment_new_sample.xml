@@ -81,7 +81,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <com.agro.dkdlab.custom.ElasticCardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/layoutNewSample"
             android:layout_width="50dp"
             android:layout_height="50dp"
@@ -100,7 +100,7 @@
                 android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_add" />
-        </com.agro.dkdlab.custom.ElasticCardView>
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/txtAddNew"

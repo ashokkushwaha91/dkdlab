@@ -8,4 +8,5 @@ public interface Constants {
     String MY_CAMERA = "MY_CAMERA";
     String MY_GALLERY = "MY_GALLERY";
     String MY_OTHER = "MY_OTHER";
+    String CROPDATA = "cropData";
 }

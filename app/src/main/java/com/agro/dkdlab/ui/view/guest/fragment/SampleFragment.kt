@@ -18,6 +18,7 @@ import com.agro.dkdlab.app.AppPermission.hasLocationPermission
 import com.agro.dkdlab.app.AppPermission.isLocationEnabled
 import com.agro.dkdlab.app.MyApp
 import com.agro.dkdlab.custom.Util.json
+import com.agro.dkdlab.custom.Util.showToast
 import com.agro.dkdlab.custom.clearSearch
 import com.agro.dkdlab.custom.searchValue
 import com.agro.dkdlab.network.model.SoilSampleModel
@@ -45,13 +46,20 @@ class SampleFragment(val list: List<SoilSampleModel>, val userType: String) : Fr
          profile= MyApp.get().getProfile()
          layoutNewSample.setOnClickListener {
             when{
-                !requireActivity().isLocationEnabled() -> requireActivity().enableLocationSettings(432)
+                !requireActivity().isLocationEnabled() -> {
+                    requireActivity().enableLocationSettings(432)
+                }
                 requireActivity().hasLocationPermission()-> {
                     createUpdateSampleLauncher.launch(Intent(activity, SoilSampleActivity::class.java))
                 }
-                else-> requireActivity().askLocationWithCameraPermission(200)
+                else-> {
+                    requireActivity().askLocationWithCameraPermission(200)
+                }
             }
-        }
+
+             //  bpos
+//             createUpdateSampleLauncher.launch(Intent(activity, SoilSampleActivity::class.java))
+         }
         checkVisibility()
 
         adapter.apply {

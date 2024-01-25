@@ -26,7 +26,6 @@ import com.agro.dkdlab.network.config.Status
 import com.agro.dkdlab.ui.view.SplashActivity
 import com.agro.dkdlab.ui.view.admin.AdminDashboardActivity
 import com.agro.dkdlab.ui.view.guest.GuestDashboardActivity
-import com.agro.dkdlab.ui.view.guest.SoilSampleActivity
 import com.agro.dkdlab.ui.view.offline.DashboardActivity
 import com.agro.dkdlab.ui.viewmodel.LoginViewModel
 import dagger.hilt.android.AndroidEntryPoint

@@ -92,6 +92,16 @@ fun getFarmingType(farmingType: String?): String {
         else -> "INORGANIC"
     }
 }
+fun getFarmingTypeNew(farmingType: String?): String {
+    return when (farmingType) {
+        "0" -> "MIX25"
+        "1" -> "MIX50"
+        "2" -> "MIX75"
+        "3" -> "INORGANIC"
+        "4" -> "ORGANIC"
+        else -> "MIX25"
+    }
+}
 
 val getNValueHint = listOf(
     "Low, less than 280",

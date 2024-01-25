@@ -365,6 +365,10 @@ class MyApp : Application() , ServiceConnection, SerialListener {
     }
 
     fun getLocale() = if (getString(LOCALE).isEmpty()) "hi" else getString(LOCALE)
+    fun setCropData(village: String) {
+        putString(CROPDATA, village)
+    }
+    fun getCropData()  =  getString(CROPDATA)
 
 
 

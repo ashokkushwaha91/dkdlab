@@ -45,10 +45,57 @@ class MainViewModel @Inject constructor(private val apiService: ApiEndPoint) : V
         }
     }
 
+    fun getCropMasterNative(language:String,villageCode:String) = liveData(Dispatchers.IO) {
+        emit(ApiRequest.loading(data = null))
+        try {
+            val response = apiService.getCropMasterNative(language,villageCode)
+            if (response.isSuccessful && response.body() != null){
+                emit(ApiRequest.success(data = response.body()!!))
+            }else{
+                val apiError = ErrorUtils.parseError(response)
+                emit(ApiRequest.error(data = null, message = apiError.message))
+            }
+        }catch (exception: Exception){
+            val type = if (exception is NoConnectivityException) "internet" else exception.message.toString()
+            emit(ApiRequest.error(data = null, message = type))
+        }
+    }
     fun storeFertCalcManual(farmSize:String,nRangName:String,pRangName:String,kRangName:String,ocRangName:String,phRangName:String) = liveData(Dispatchers.IO) {
         emit(ApiRequest.loading(data = null))
         try {
             val response = apiService.storeFertCalcManual(farmSize,nRangName,pRangName,kRangName,ocRangName,phRangName,"English")
+            if (response.isSuccessful && response.body() != null){
+                emit(ApiRequest.success(data = response.body()!!))
+            }else{
+                val apiError = ErrorUtils.parseError(response)
+                emit(ApiRequest.error(data = null, message = apiError.message))
+            }
+        }catch (exception: Exception){
+            val type = if (exception is NoConnectivityException) "internet" else exception.message.toString()
+            emit(ApiRequest.error(data = null, message = type))
+        }
+    }
+
+    fun storeFertelizerCalcCombination(userId:String,cropId:String,farmSize:String,nRangName:String,pRangName:String,kRangName:String,ocRangName:String,phRangName:String) = liveData(Dispatchers.IO) {
+        emit(ApiRequest.loading(data = null))
+        try {
+            val response = apiService.storeFertelizerCalcCombination(userId,cropId,farmSize,nRangName,pRangName,kRangName,ocRangName,phRangName,"English")
+            if (response.isSuccessful && response.body() != null){
+                emit(ApiRequest.success(data = response.body()!!))
+            }else{
+                val apiError = ErrorUtils.parseError(response)
+                emit(ApiRequest.error(data = null, message = apiError.message))
+            }
+        }catch (exception: Exception){
+            val type = if (exception is NoConnectivityException) "internet" else exception.message.toString()
+            emit(ApiRequest.error(data = null, message = type))
+        }
+    }
+
+    fun getseedValueCalculation(farmId:String,cropId:String,stateCode:String) = liveData(Dispatchers.IO) {
+        emit(ApiRequest.loading(data = null))
+        try {
+            val response = apiService.getseedValueCalculation(farmId, cropId, "English",stateCode)
             if (response.isSuccessful && response.body() != null){
                 emit(ApiRequest.success(data = response.body()!!))
             }else{

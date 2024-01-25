@@ -149,7 +149,18 @@ class ManualFertilizerCalculatorActivity : AppCompatActivity() {
             binding.spinnerKValue.selectedItem.toString().isEmpty() || binding.spinnerKValue.selectedItemPosition == 0 -> showToast("Please select potassium value")
             binding.spinnerOCValue.selectedItem.toString().isEmpty() || binding.spinnerOCValue.selectedItemPosition == 0 -> showToast("Please select organic carbon value")
             else -> {
-                fertCalculateManual()
+                /*fertCalculateManual()*/
+                var soilSampleResult= SoilSampleModel(
+                    ids=1,
+                    farmSize = binding.editTextFarm.text.toString(),
+                    nrangName =  binding.spinnerNValue.selectedItem.toString(),
+                    prangName = binding.spinnerPValue.selectedItem.toString(),
+                    krangName = binding.spinnerKValue.selectedItem.toString(),
+                    ocRangName = binding.spinnerOCValue.selectedItem.toString(),
+                    phRangName = binding.spinnerPhValue.selectedItem.toString()
+                )
+                startActivity(Intent(this, FertilizerCalculationActivity::class.java)
+                    .putExtra("sampleData",  soilSampleResult.json()))
             }
         }
     }
